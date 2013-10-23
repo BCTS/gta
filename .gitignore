@@ -216,7 +216,6 @@ pip-log.txt
 ## xCP
 #############
 configuration/
-META-INF/
 target/
 .index
 .generatedresources
