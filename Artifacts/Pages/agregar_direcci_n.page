@@ -55,13 +55,13 @@
         <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='pais']">
           <properties name="fieldLabel" value="País" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.0"/>
           <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.1"/>
-          <properties name="store" value="xcp.picklist.uif_pl_tipo_numero_dire" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.2"/>
+          <properties name="store" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.2"/>
           <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.3"/>
           <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.4"/>
-          <properties name="valueField" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.5"/>
-          <properties name="displayField" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.6"/>
-          <properties name="datasourceInstance" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.7"/>
-          <properties name="selectedPickList" value="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_tipo_numero_dire.picklist" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.8"/>
+          <properties name="valueField" value="pais" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.5"/>
+          <properties name="displayField" value="pais" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.6"/>
+          <properties name="datasourceInstance" value="obtener_lista_de_pa_initiate_staless_ds" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.7"/>
+          <properties name="selectedPickList" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.8"/>
           <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.9"/>
           <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.10"/>
           <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.11"/>
@@ -85,13 +85,13 @@
         <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='departamento']">
           <properties name="fieldLabel" value="Departamento" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.0"/>
           <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.1"/>
-          <properties name="store" value="xcp.picklist.uif_pl_profesiones" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.2"/>
+          <properties name="store" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.2"/>
           <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.3"/>
-          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.4"/>
-          <properties name="valueField" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.5"/>
-          <properties name="displayField" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.6"/>
-          <properties name="datasourceInstance" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.7"/>
-          <properties name="selectedPickList" value="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_profesiones.picklist" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.8"/>
+          <properties name="hidden" value="widgets.pais != 'Peru'" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.4"/>
+          <properties name="valueField" value="departamentos" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.5"/>
+          <properties name="displayField" value="departamentos" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.6"/>
+          <properties name="datasourceInstance" value="obtener_lista_de_de_initiate_staless_ds" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.7"/>
+          <properties name="selectedPickList" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.8"/>
           <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.9"/>
           <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.10"/>
           <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.11"/>
@@ -115,13 +115,13 @@
         <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='provincia']">
           <properties name="fieldLabel" value="Provincia" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.0"/>
           <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.1"/>
-          <properties name="store" value="xcp.picklist.uif_pl_tipo_numero_dire" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.2"/>
+          <properties name="store" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.2"/>
           <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.3"/>
-          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.4"/>
-          <properties name="valueField" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.5"/>
-          <properties name="displayField" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.6"/>
-          <properties name="datasourceInstance" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.7"/>
-          <properties name="selectedPickList" value="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_tipo_numero_dire.picklist" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.8"/>
+          <properties name="hidden" value="widgets.pais != 'Peru'" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.4"/>
+          <properties name="valueField" value="provincias" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.5"/>
+          <properties name="displayField" value="provincias" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.6"/>
+          <properties name="datasourceInstance" value="obtener_lista_provi_initiate_staless_ds" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.7"/>
+          <properties name="selectedPickList" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.8"/>
           <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.9"/>
           <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.10"/>
           <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.11"/>
@@ -145,13 +145,13 @@
         <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='distrito']">
           <properties name="fieldLabel" value="Distrito" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.0"/>
           <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.1"/>
-          <properties name="store" value="xcp.picklist.uif_pl_tipo_numero_dire" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.2"/>
+          <properties name="store" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.2"/>
           <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.3"/>
-          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.4"/>
-          <properties name="valueField" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.5"/>
-          <properties name="displayField" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.6"/>
-          <properties name="datasourceInstance" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.7"/>
-          <properties name="selectedPickList" value="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_tipo_numero_dire.picklist" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.8"/>
+          <properties name="hidden" value="widgets.pais != 'Peru'" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.4"/>
+          <properties name="valueField" value="distritos" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.5"/>
+          <properties name="displayField" value="distritos" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.6"/>
+          <properties name="datasourceInstance" value="obtener_lista_distr_initiate_staless_ds" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.7"/>
+          <properties name="selectedPickList" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.8"/>
           <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.9"/>
           <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.10"/>
           <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.11"/>
@@ -554,6 +554,27 @@
   <widgetMap key="button" value="//@rootContainer/@children.1/@children.0/@children.0"/>
   <widgetMap key="button1" value="//@rootContainer/@children.1/@children.0/@children.1"/>
   <primaryModel href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#/"/>
+  <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="obtener_lista_de_pa_initiate_staless_ds" label="Stateless Process Obtener Lista de Paises">
+    <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/obtener_lista_de_pa.process#//@activities[name='Initiate']/@taskContract/@dataServiceContracts[name='obtener_lista_de_pa_initiate_staless_ds']"/>
+  </dataSources>
+  <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="obtener_lista_distr_initiate_staless_ds" label="Stateless Process Obtener Lista Distritos" invokeOnChange="true" invokeOnPageLoad="false">
+    <inputMappings name="departamento">
+      <expression exprStr="widgets.departamento.value"/>
+    </inputMappings>
+    <inputMappings name="provincia">
+      <expression exprStr="widgets.provincia.value"/>
+    </inputMappings>
+    <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/obtener_lista_distr.process#//@activities[name='Initiate']/@taskContract/@dataServiceContracts[name='obtener_lista_distr_initiate_staless_ds']"/>
+  </dataSources>
+  <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="obtener_lista_de_de_initiate_staless_ds" label="Stateless Process Obtener Lista de Departamentos">
+    <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/obtener_lista_de_de.process#//@activities[name='Initiate']/@taskContract/@dataServiceContracts[name='obtener_lista_de_de_initiate_staless_ds']"/>
+  </dataSources>
+  <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="obtener_lista_provi_initiate_staless_ds" label="Stateless Process Obtener Lista Provincias" invokeOnChange="true" invokeOnPageLoad="false">
+    <inputMappings name="departamento">
+      <expression exprStr="widgets.departamento.value"/>
+    </inputMappings>
+    <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/obtener_lista_provi.process#//@activities[name='Initiate']/@taskContract/@dataServiceContracts[name='obtener_lista_provi_initiate_staless_ds']"/>
+  </dataSources>
   <dataActions categoryId="com.emc.xcp.artifact.dataservice.dataaction" name="da_def_invoke_stateless_processcrear_direccion_en__initiate" label="Stateless Process Crear Direccion en Involucrado" invokeOnPageLoad="false">
     <inputMappings name="departamento">
       <expression exprStr="widgets.departamento.value"/>

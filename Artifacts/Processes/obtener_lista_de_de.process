@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsProcess:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsActivity="http://documentum.com/bpm/activity" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsCommon="http://documentum.com/common" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsProcess="http://documentum.com/bpm/process" urn="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/obtener_lista_de_de.process" categoryId="com.emc.ide.artifact.process" name="obtener_lista_de_de" label="Obtener Lista de Departamentos" description="" webServiceTargetNamespace="" workflowInstructions="" synchronous="true">
+  <activities name="Initiate" activityType="INITIATE" priority="Medium" taskName="" taskInstructions="" destFlows="//@flows[name='L1']">
+    <trigger canRunMultipleTimes="true"/>
+    <transition xsi:type="nsActivity:AllFlowsTransition"/>
+    <uiinfo imageScale="100" image="palette/event_start_32_proc.png">
+      <topLeftPoint x="50" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </uiinfo>
+    <performerConfig xsi:type="nsActivity:DefaultInitiatePerformerConfiguration"/>
+    <variableCharacteristics key="//@processData/@variables[name='departamentos']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <taskContract categoryId="com.emc.ide.artifact.process.activity.taskcontract" name="obtener_lista_de_de_initiate" label="Initiate">
+      <dataServiceContracts xsi:type="nsDataserviceContract:DataActionContract" categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_create_obtener_lista_de_de_initiate" label="Initiate Process Obtener Lista de Departamentos" implCategoryId="com.emc.ide.artifact.process.activity.taskcontract">
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processVariables" label="Variables">
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="departamentos" label="departamentos" repeating="true">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processPackages" label="Packages"/>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="attachments" label="Attachments" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <primaryElement name="obtener_lista_de_de_initiate" dataModel="//@activities[name='Initiate']/@taskContract"/>
+        <actionType type="Create"/>
+      </dataServiceContracts>
+      <dataServiceContracts xsi:type="nsDataserviceContract:DataSourceContract" categoryId="com.emc.xcp.artifact.dataservice.datasourcecontract" name="obtener_lista_de_de_initiate_staless_ds" label="Stateless Process Obtener Lista de Departamentos" implCategoryId="com.emc.xcp.artifact.process.statelessProcess">
+        <outputs xsi:type="nsDataserviceContract:AttributeElement" name="Result Count">
+          <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+        </outputs>
+        <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+          <item xsi:type="nsDataserviceContract:StructureElement" name="Items">
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="departamentos" label="departamentos">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+          </item>
+        </outputs>
+        <primaryElement dataModel="//@activities[name='Initiate']/@taskContract"/>
+      </dataServiceContracts>
+    </taskContract>
+  </activities>
+  <activities name="Obtener Departamentos" activityType="BEGIN" description="" priority="Medium" taskName="" taskInstructions="" sourceFlows="//@flows[name='L1']">
+    <trigger numOfInputFlows="1" expectedEventName="" canRunMultipleTimes="true"/>
+    <transition xsi:type="nsActivity:AllFlowsTransition"/>
+    <timers/>
+    <calendar flag="Performer"/>
+    <uiinfo imageScale="100" image="activity_autoext_48x32_proc.png">
+      <topLeftPoint x="132" y="156"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </uiinfo>
+    <performerConfig xsi:type="nsActivity:SvcDefBasedOutboundPerformerConfiguration" timeout="60" serviceDefinition="&lt;?xml version=&quot;1.0&quot;?>&#xA;&lt;ServiceDefinition xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;activity.xsd&quot;>&#xA;    &lt;Name>DQL Read&lt;/Name>&#xA;    &lt;RuntimeModuleName>DQLOutboundRuntimeModule&lt;/RuntimeModuleName>&#xA;    &lt;DesignModuleName>DQLOutboundDesignModule&lt;/DesignModuleName>&#xA;    &lt;Configuration>&#xA;        &lt;Parameter>&#xA;            &lt;Name>DOCBASE_CHECK_CONFIG_PARAM&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[false]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>QUERY_CONFIG_PARAM&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[select nombre from dm_dbo.xcel_ubigeo where prov = 0 and dist = 0]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>ENDPOINT_URN&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[urn:uif:com.emc.xcp.artifact.endpoint:Artifacts/Endpoints/repositorio.endpoint]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>ACTIVITY_TYPE_CONFIG_PARAM&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[READ]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>ENDPOINT_LABEL&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[repositorio]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>USERDATATYPES_CONFIG_PARAM&lt;/Name>&#xA;            &lt;Value xsi:nil=&quot;true&quot;/>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>COLUMNALIAS_CONFIG_PARAM&lt;/Name>&#xA;            &lt;Value xsi:nil=&quot;true&quot;/>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;    &lt;/Configuration>&#xA;    &lt;InputMsgCopyRules/>&#xA;    &lt;OutputMsgCopyRules>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>57&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Collection/Object[ALL]/nombre&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/Process Data/Variables/departamentos[0]&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;    &lt;/OutputMsgCopyRules>&#xA;    &lt;CorrelationMsgCopyRules/>&#xA;    &lt;UserDefinedInputTreeNodes/>&#xA;    &lt;UserDefinedOutputTreeNodes/>&#xA;    &lt;InputSchemaConfigs/>&#xA;    &lt;OutputSchemaConfigs/>&#xA;&lt;/ServiceDefinition>&#xA;">
+      <performer>
+        <dataResolutionConfig xsi:type="nsCommon:PredefinedResolutionConfig"/>
+      </performer>
+      <methodFailure/>
+    </performerConfig>
+    <variableCharacteristics key="//@processData/@variables[name='departamentos']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <eventConfigs label="Activity Completed">
+      <triggerType type="PROCESS_ACTIVITY_COMPLETED"/>
+    </eventConfigs>
+  </activities>
+  <processData>
+    <variables xsi:type="nsProcess:SimpleVariable" output="true">
+      <attribute name="departamentos" label="departamentos" repeating="true">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue exprStr=""/>
+      </attribute>
+    </variables>
+  </processData>
+  <flows name="L1" from="//@activities[name='Initiate']" to="//@activities[name='Obtener%20Departamentos']">
+    <uiinfo destActivityLocIndex="1">
+      <line/>
+      <labelStyle fontName="Helvetica" fontSize="10"/>
+    </uiinfo>
+  </flows>
+  <defaultSettings/>
+  <processUIInfo>
+    <startActivityUIInfo imageScale="100" image="palette/event_start_32_proc.png">
+      <topLeftPoint x="50" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </startActivityUIInfo>
+    <endActivityUIInfo imageScale="100" image="palette/event_end_32_proc.png">
+      <topLeftPoint x="219" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </endActivityUIInfo>
+    <endSequenceFlowUIInfo destActivityLocIndex="4">
+      <line/>
+      <labelStyle fontName="Helvetica" fontSize="10"/>
+    </endSequenceFlowUIInfo>
+  </processUIInfo>
+  <eventConfigs label="Workflow Started">
+    <triggerType type="PROCESS_WORKFLOW_STARTED"/>
+  </eventConfigs>
+  <eventConfigs label="Workflow changed state">
+    <triggerType type="PROCESS_WORKFLOW_CHANGESTATE"/>
+  </eventConfigs>
+  <eventConfigs label="Workflow Aborted">
+    <triggerType type="PROCESS_WORKFLOW_ABORTED"/>
+  </eventConfigs>
+  <eventConfigs label="Workflow completed">
+    <triggerType type="PROCESS_WORKFLOW_COMPLETED"/>
+  </eventConfigs>
+</nsProcess:Process>

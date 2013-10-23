@@ -110,122 +110,6 @@
     }
   },
   "xcp_currenttask" : {
-    "xcp_hold_task" : {
-      "flowDef" : {
-        "action-type" : "HoldTask",
-        "actionmodel" : {
-          "name" : "xcp_da_def_hold_currenttask"
-        },
-        "initial-state" : "viewState_hold_task",
-        "view-state" : [ {
-          "id" : "viewState_hold_task",
-          "xcpId" : "hold_task",
-          "pageUrl" : "application/xcp_hold_task",
-          "transition" : [ {
-            "on" : "cancel",
-            "to" : "cancel"
-          }, {
-            "on" : "finish",
-            "to" : "finish"
-          } ]
-        } ],
-        "action-state" : [ {
-          "id" : "finish",
-          "actionInstanceId" : "da_actionflow_hold_task",
-          "transition" : [ {
-            "on" : "success",
-            "to" : "success"
-          }, {
-            "on" : "error",
-            "to" : "error"
-          } ]
-        } ],
-        "end-state" : [ {
-          "id" : "success"
-        }, {
-          "id" : "error"
-        }, {
-          "id" : "cancel"
-        } ],
-        "data-action" : [ {
-          "xcpId" : "da_actionflow_hold_task",
-          "actionType" : "xcp_hold_task",
-          "actionModel" : "xcp_da_def_hold_currenttask",
-          "plugins" : [ {
-            "ptype" : "xcp_actionflow_expression_properties",
-            "expression" : [ {
-              "propertyId" : "id",
-              "setterFunName" : "setInputProperty",
-              "etype" : "hold_task_da_id_1"
-            }, {
-              "propertyId" : "holdUntil",
-              "setterFunName" : "setInputProperty",
-              "etype" : "hold_task_da_holdUntil_1",
-              "pageId" : "hold_task",
-              "events" : ["hold_until.change" ]
-            } ]
-          } ]
-        } ]
-      }
-    },
-    "xcp_reassign_task" : {
-      "flowDef" : {
-        "action-type" : "ReassignTask",
-        "actionmodel" : {
-          "name" : "xcp_da_def_reassign_currenttask"
-        },
-        "initial-state" : "viewState_user_from_queue",
-        "view-state" : [ {
-          "id" : "viewState_user_from_queue",
-          "xcpId" : "user_from_queue",
-          "pageUrl" : "application/xcp_user_from_queue",
-          "transition" : [ {
-            "on" : "cancel",
-            "to" : "cancel"
-          }, {
-            "on" : "finish",
-            "to" : "finish"
-          } ]
-        } ],
-        "action-state" : [ {
-          "id" : "finish",
-          "actionInstanceId" : "da_actionflow_reassign_task",
-          "transition" : [ {
-            "on" : "success",
-            "to" : "success"
-          }, {
-            "on" : "error",
-            "to" : "error"
-          } ]
-        } ],
-        "end-state" : [ {
-          "id" : "success"
-        }, {
-          "id" : "error"
-        }, {
-          "id" : "cancel"
-        } ],
-        "data-action" : [ {
-          "xcpId" : "da_actionflow_reassign_task",
-          "actionType" : "xcp_reassign_task",
-          "actionModel" : "xcp_da_def_reassign_currenttask",
-          "plugins" : [ {
-            "ptype" : "xcp_actionflow_expression_properties",
-            "expression" : [ {
-              "propertyId" : "id",
-              "setterFunName" : "setInputProperty",
-              "etype" : "reassign_task_da_id_1"
-            }, {
-              "propertyId" : "userName",
-              "setterFunName" : "setInputProperty",
-              "etype" : "reassign_task_da_userName_1",
-              "pageId" : "user_from_queue",
-              "events" : ["dropdown_list.change" ]
-            } ]
-          } ]
-        } ]
-      }
-    },
     "xcp_assign_task" : {
       "flowDef" : {
         "action-type" : "AssignTask",
@@ -341,47 +225,144 @@
           } ]
         } ]
       }
+    },
+    "xcp_reassign_task" : {
+      "flowDef" : {
+        "action-type" : "ReassignTask",
+        "actionmodel" : {
+          "name" : "xcp_da_def_reassign_currenttask"
+        },
+        "initial-state" : "viewState_user_from_queue",
+        "view-state" : [ {
+          "id" : "viewState_user_from_queue",
+          "xcpId" : "user_from_queue",
+          "pageUrl" : "application/xcp_user_from_queue",
+          "transition" : [ {
+            "on" : "cancel",
+            "to" : "cancel"
+          }, {
+            "on" : "finish",
+            "to" : "finish"
+          } ]
+        } ],
+        "action-state" : [ {
+          "id" : "finish",
+          "actionInstanceId" : "da_actionflow_reassign_task",
+          "transition" : [ {
+            "on" : "success",
+            "to" : "success"
+          }, {
+            "on" : "error",
+            "to" : "error"
+          } ]
+        } ],
+        "end-state" : [ {
+          "id" : "success"
+        }, {
+          "id" : "error"
+        }, {
+          "id" : "cancel"
+        } ],
+        "data-action" : [ {
+          "xcpId" : "da_actionflow_reassign_task",
+          "actionType" : "xcp_reassign_task",
+          "actionModel" : "xcp_da_def_reassign_currenttask",
+          "plugins" : [ {
+            "ptype" : "xcp_actionflow_expression_properties",
+            "expression" : [ {
+              "propertyId" : "id",
+              "setterFunName" : "setInputProperty",
+              "etype" : "reassign_task_da_id_1"
+            }, {
+              "propertyId" : "userName",
+              "setterFunName" : "setInputProperty",
+              "etype" : "reassign_task_da_userName_1",
+              "pageId" : "user_from_queue",
+              "events" : ["dropdown_list.change" ]
+            } ]
+          } ]
+        } ]
+      }
+    },
+    "xcp_hold_task" : {
+      "flowDef" : {
+        "action-type" : "HoldTask",
+        "actionmodel" : {
+          "name" : "xcp_da_def_hold_currenttask"
+        },
+        "initial-state" : "viewState_hold_task",
+        "view-state" : [ {
+          "id" : "viewState_hold_task",
+          "xcpId" : "hold_task",
+          "pageUrl" : "application/xcp_hold_task",
+          "transition" : [ {
+            "on" : "cancel",
+            "to" : "cancel"
+          }, {
+            "on" : "finish",
+            "to" : "finish"
+          } ]
+        } ],
+        "action-state" : [ {
+          "id" : "finish",
+          "actionInstanceId" : "da_actionflow_hold_task",
+          "transition" : [ {
+            "on" : "success",
+            "to" : "success"
+          }, {
+            "on" : "error",
+            "to" : "error"
+          } ]
+        } ],
+        "end-state" : [ {
+          "id" : "success"
+        }, {
+          "id" : "error"
+        }, {
+          "id" : "cancel"
+        } ],
+        "data-action" : [ {
+          "xcpId" : "da_actionflow_hold_task",
+          "actionType" : "xcp_hold_task",
+          "actionModel" : "xcp_da_def_hold_currenttask",
+          "plugins" : [ {
+            "ptype" : "xcp_actionflow_expression_properties",
+            "expression" : [ {
+              "propertyId" : "id",
+              "setterFunName" : "setInputProperty",
+              "etype" : "hold_task_da_id_1"
+            }, {
+              "propertyId" : "holdUntil",
+              "setterFunName" : "setInputProperty",
+              "etype" : "hold_task_da_holdUntil_1",
+              "pageId" : "hold_task",
+              "events" : ["hold_until.change" ]
+            } ]
+          } ]
+        } ]
+      }
     }
   },
-  "uif_f_involucrado" : {
-    "uif_crear_test" : {
+  "xcp_dm_folder" : {
+    "uif_base_folder_1" : {
       "flowDef" : {
         "action-type" : "Create",
         "actionmodel" : {
-          "name" : "uif_f_involucrado_crear_test_model",
+          "name" : "xcp_dm_folder_base_folder_1_model",
           "attribute-mapping" : {
-            "alias" : "uif_f_involucrado_crear_test_model.alias",
-            "apellido_materno" : "uif_f_involucrado_crear_test_model.apellido_materno",
-            "apellido_paterno" : "uif_f_involucrado_crear_test_model.apellido_paterno",
-            "departamento_nacimiento" : "uif_f_involucrado_crear_test_model.departamento_nacimiento",
-            "distrito_nacimiento" : "uif_f_involucrado_crear_test_model.distrito_nacimiento",
-            "email" : "uif_f_involucrado_crear_test_model.email",
-            "estado" : "uif_f_involucrado_crear_test_model.estado",
-            "estado_civil" : "uif_f_involucrado_crear_test_model.estado_civil",
-            "falsos_nombres" : "uif_f_involucrado_crear_test_model.falsos_nombres",
-            "fecha_defuncion" : "uif_f_involucrado_crear_test_model.fecha_defuncion",
-            "fecha_nacimiento" : "uif_f_involucrado_crear_test_model.fecha_nacimiento",
-            "fullname" : "uif_f_involucrado_crear_test_model.fullname",
-            "genero" : "uif_f_involucrado_crear_test_model.genero",
-            "idiomas" : "uif_f_involucrado_crear_test_model.idiomas",
-            "nombres" : "uif_f_involucrado_crear_test_model.nombres",
-            "pais_nacimiento" : "uif_f_involucrado_crear_test_model.pais_nacimiento",
-            "profesion" : "uif_f_involucrado_crear_test_model.profesion",
-            "provincia_nacimiento" : "uif_f_involucrado_crear_test_model.provincia_nacimiento",
-            "tipo_persona" : "uif_f_involucrado_crear_test_model.tipo_persona",
-            "object_name" : "uif_f_involucrado_crear_test_model.object_name",
-            "subject" : "uif_f_involucrado_crear_test_model.subject",
-            "title" : "uif_f_involucrado_crear_test_model.title",
-            "content_id" : "uif_f_involucrado_crear_test_model.content_id",
-            "folder_id" : "uif_f_involucrado_crear_test_model.folder_id"
+            "object_name" : "xcp_dm_folder_base_folder_1_model.object_name",
+            "subject" : "xcp_dm_folder_base_folder_1_model.subject",
+            "title" : "xcp_dm_folder_base_folder_1_model.title",
+            "content_id" : "xcp_dm_folder_base_folder_1_model.content_id",
+            "folder_id" : "xcp_dm_folder_base_folder_1_model.folder_id"
           }
         },
-        "initial-state" : "crear_test_step_1",
+        "initial-state" : "base_folder_1_step_",
         "view-state" : [ {
-          "id" : "crear_test_step_1",
-          "pageUrl" : "uif_f_involucrado/uif_f_involucrado_uif_crear_test_step_1",
+          "id" : "base_folder_1_step_",
+          "pageUrl" : "xcp_dm_folder/xcp_dm_folder_uif_base_folder_1_step_",
           "output-model" : {
-            "uif_f_involucrado_crear_test_model" : "uif_f_involucrado_crear_test_model"
+            "xcp_dm_folder_base_folder_1_model" : "xcp_dm_folder_base_folder_1_model"
           },
           "transition" : [ {
             "on" : "cancel"
@@ -394,9 +375,7 @@
           "action" : "save"
         }
       }
-    }
-  },
-  "xcp_dm_folder" : {
+    },
     "xcp_selector_folder" : {
       "flowDef" : {
         "action-type" : "Selector",
@@ -470,6 +449,59 @@
           "pageUrl" : "xcp_dm_folder/xcp_dm_folder_uif_base_folder_step_1",
           "output-model" : {
             "xcp_dm_folder_base_folder_model" : "xcp_dm_folder_base_folder_model"
+          },
+          "transition" : [ {
+            "on" : "cancel"
+          }, {
+            "on" : "finish"
+          } ]
+        } ],
+        "action-state" : {
+          "id" : "finish",
+          "action" : "save"
+        }
+      }
+    }
+  },
+  "uif_f_involucrado" : {
+    "uif_crear_test" : {
+      "flowDef" : {
+        "action-type" : "Create",
+        "actionmodel" : {
+          "name" : "uif_f_involucrado_crear_test_model",
+          "attribute-mapping" : {
+            "alias" : "uif_f_involucrado_crear_test_model.alias",
+            "apellido_materno" : "uif_f_involucrado_crear_test_model.apellido_materno",
+            "apellido_paterno" : "uif_f_involucrado_crear_test_model.apellido_paterno",
+            "departamento_nacimiento" : "uif_f_involucrado_crear_test_model.departamento_nacimiento",
+            "distrito_nacimiento" : "uif_f_involucrado_crear_test_model.distrito_nacimiento",
+            "email" : "uif_f_involucrado_crear_test_model.email",
+            "estado" : "uif_f_involucrado_crear_test_model.estado",
+            "estado_civil" : "uif_f_involucrado_crear_test_model.estado_civil",
+            "falsos_nombres" : "uif_f_involucrado_crear_test_model.falsos_nombres",
+            "fecha_defuncion" : "uif_f_involucrado_crear_test_model.fecha_defuncion",
+            "fecha_nacimiento" : "uif_f_involucrado_crear_test_model.fecha_nacimiento",
+            "fullname" : "uif_f_involucrado_crear_test_model.fullname",
+            "genero" : "uif_f_involucrado_crear_test_model.genero",
+            "idiomas" : "uif_f_involucrado_crear_test_model.idiomas",
+            "nombres" : "uif_f_involucrado_crear_test_model.nombres",
+            "pais_nacimiento" : "uif_f_involucrado_crear_test_model.pais_nacimiento",
+            "profesion" : "uif_f_involucrado_crear_test_model.profesion",
+            "provincia_nacimiento" : "uif_f_involucrado_crear_test_model.provincia_nacimiento",
+            "tipo_persona" : "uif_f_involucrado_crear_test_model.tipo_persona",
+            "object_name" : "uif_f_involucrado_crear_test_model.object_name",
+            "subject" : "uif_f_involucrado_crear_test_model.subject",
+            "title" : "uif_f_involucrado_crear_test_model.title",
+            "content_id" : "uif_f_involucrado_crear_test_model.content_id",
+            "folder_id" : "uif_f_involucrado_crear_test_model.folder_id"
+          }
+        },
+        "initial-state" : "crear_test_step_1",
+        "view-state" : [ {
+          "id" : "crear_test_step_1",
+          "pageUrl" : "uif_f_involucrado/uif_f_involucrado_uif_crear_test_step_1",
+          "output-model" : {
+            "uif_f_involucrado_crear_test_model" : "uif_f_involucrado_crear_test_model"
           },
           "transition" : [ {
             "on" : "cancel"

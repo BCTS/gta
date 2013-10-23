@@ -456,101 +456,125 @@
             <propertyMap key="defaultMargins" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@properties.9"/>
             <propertyMap key="margins" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@properties.10"/>
             <propertyMap key="xcpId" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@properties.11"/>
-            <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.2/@children.0/@children.0/@children.1" widgetEntry="//@widgetMap[key='pais_nacimiento']">
+            <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.2/@children.0/@children.0/@children.1" widgetEntry="//@widgetMap[key='pais_nacimiento']">
               <properties name="fieldLabel" value="País Nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.0"/>
               <properties name="emptyText" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.1"/>
-              <properties name="name" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.2"/>
-              <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.3"/>
-              <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.4"/>
-              <properties name="readOnly" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.5"/>
-              <properties name="hidden" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.6"/>
-              <properties name="valueType" value="STRING" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.7"/>
-              <properties name="inputType" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.8"/>
-              <properties xsi:type="uitemplate:DataboundProperty" name="value" value="f_involucrado.pais_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.9"/>
-              <properties name="xcpId" value="pais_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.10"/>
+              <properties name="store" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.2"/>
+              <properties name="disabled" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.3"/>
+              <properties name="hidden" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.4"/>
+              <properties name="valueField" value="pais" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.5"/>
+              <properties name="displayField" value="pais" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.6"/>
+              <properties name="datasourceInstance" value="obtener_lista_de_pa_initiate_staless_ds" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.7"/>
+              <properties name="selectedPickList" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.8"/>
+              <properties name="valueType" value="STRING" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.9"/>
+              <properties name="name" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.10"/>
+              <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.11"/>
+              <properties xsi:type="uitemplate:DataboundProperty" name="value" value="f_involucrado.pais_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.12"/>
+              <properties name="xcpId" value="pais_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@propertyMap.13"/>
               <propertyMap key="fieldLabel" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.0"/>
               <propertyMap key="emptyText" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.1"/>
-              <propertyMap key="name" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.2"/>
-              <propertyMap key="hstretch" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.3"/>
-              <propertyMap key="size" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.4"/>
-              <propertyMap key="readOnly" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.5"/>
-              <propertyMap key="hidden" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.6"/>
-              <propertyMap key="valueType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.7"/>
-              <propertyMap key="inputType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.8"/>
-              <propertyMap key="value" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.9"/>
-              <propertyMap key="xcpId" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.10"/>
+              <propertyMap key="store" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.2"/>
+              <propertyMap key="disabled" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.3"/>
+              <propertyMap key="hidden" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.4"/>
+              <propertyMap key="valueField" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.5"/>
+              <propertyMap key="displayField" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.6"/>
+              <propertyMap key="datasourceInstance" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.7"/>
+              <propertyMap key="selectedPickList" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.8"/>
+              <propertyMap key="valueType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.9"/>
+              <propertyMap key="name" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.10"/>
+              <propertyMap key="fieldWidth" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.11"/>
+              <propertyMap key="value" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.12"/>
+              <propertyMap key="xcpId" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0/@properties.13"/>
             </children>
-            <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.2/@children.0/@children.0/@children.1" widgetEntry="//@widgetMap[key='departamento_nacimiento']">
+            <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.2/@children.0/@children.0/@children.1" widgetEntry="//@widgetMap[key='departamento']">
               <properties name="fieldLabel" value="Departamento Nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.0"/>
               <properties name="emptyText" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.1"/>
-              <properties name="name" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.2"/>
-              <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.3"/>
-              <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.4"/>
-              <properties name="readOnly" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.5"/>
-              <properties name="hidden" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.6"/>
-              <properties name="valueType" value="STRING" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.7"/>
-              <properties name="inputType" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.8"/>
-              <properties xsi:type="uitemplate:DataboundProperty" name="value" value="f_involucrado.departamento_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.9"/>
-              <properties name="xcpId" value="departamento_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.10"/>
+              <properties name="store" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.2"/>
+              <properties name="disabled" value="widgets.pais_nacimiento != 'Peru'" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.3"/>
+              <properties name="hidden" value="widgets.tipo_persona.value == 'JURIDICA'" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.4"/>
+              <properties name="valueField" value="departamentos" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.5"/>
+              <properties name="displayField" value="departamentos" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.6"/>
+              <properties name="datasourceInstance" value="obtener_lista_de_de_initiate_staless_ds" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.7"/>
+              <properties name="selectedPickList" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.8"/>
+              <properties name="valueType" value="STRING" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.9"/>
+              <properties name="name" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.10"/>
+              <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.11"/>
+              <properties xsi:type="uitemplate:DataboundProperty" name="value" value="f_involucrado.departamento_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.12"/>
+              <properties name="xcpId" value="departamento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@propertyMap.13"/>
               <propertyMap key="fieldLabel" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.0"/>
               <propertyMap key="emptyText" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.1"/>
-              <propertyMap key="name" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.2"/>
-              <propertyMap key="hstretch" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.3"/>
-              <propertyMap key="size" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.4"/>
-              <propertyMap key="readOnly" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.5"/>
-              <propertyMap key="hidden" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.6"/>
-              <propertyMap key="valueType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.7"/>
-              <propertyMap key="inputType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.8"/>
-              <propertyMap key="value" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.9"/>
-              <propertyMap key="xcpId" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.10"/>
+              <propertyMap key="store" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.2"/>
+              <propertyMap key="disabled" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.3"/>
+              <propertyMap key="hidden" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.4"/>
+              <propertyMap key="valueField" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.5"/>
+              <propertyMap key="displayField" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.6"/>
+              <propertyMap key="datasourceInstance" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.7"/>
+              <propertyMap key="selectedPickList" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.8"/>
+              <propertyMap key="valueType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.9"/>
+              <propertyMap key="name" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.10"/>
+              <propertyMap key="fieldWidth" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.11"/>
+              <propertyMap key="value" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.12"/>
+              <propertyMap key="xcpId" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1/@properties.13"/>
             </children>
-            <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.2/@children.0/@children.0/@children.1" widgetEntry="//@widgetMap[key='provincia_nacimiento']">
+            <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.2/@children.0/@children.0/@children.1" widgetEntry="//@widgetMap[key='provincia_nacimiento']">
               <properties name="fieldLabel" value="Provincia Nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.0"/>
               <properties name="emptyText" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.1"/>
-              <properties name="name" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.2"/>
-              <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.3"/>
-              <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.4"/>
-              <properties name="readOnly" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.5"/>
-              <properties name="hidden" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.6"/>
-              <properties name="valueType" value="STRING" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.7"/>
-              <properties name="inputType" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.8"/>
-              <properties xsi:type="uitemplate:DataboundProperty" name="value" value="f_involucrado.provincia_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.9"/>
-              <properties name="xcpId" value="provincia_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.10"/>
+              <properties name="store" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.2"/>
+              <properties name="disabled" value="widgets.pais_nacimiento != 'Peru'" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.3"/>
+              <properties name="hidden" value="widgets.tipo_persona.value == 'JURIDICA'" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.4"/>
+              <properties name="valueField" value="provincias" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.5"/>
+              <properties name="displayField" value="provincias" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.6"/>
+              <properties name="datasourceInstance" value="obtener_lista_provi_initiate_staless_ds" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.7"/>
+              <properties name="selectedPickList" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.8"/>
+              <properties name="valueType" value="STRING" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.9"/>
+              <properties name="name" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.10"/>
+              <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.11"/>
+              <properties xsi:type="uitemplate:DataboundProperty" name="value" value="f_involucrado.provincia_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.12"/>
+              <properties name="xcpId" value="provincia_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@propertyMap.13"/>
               <propertyMap key="fieldLabel" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.0"/>
               <propertyMap key="emptyText" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.1"/>
-              <propertyMap key="name" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.2"/>
-              <propertyMap key="hstretch" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.3"/>
-              <propertyMap key="size" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.4"/>
-              <propertyMap key="readOnly" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.5"/>
-              <propertyMap key="hidden" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.6"/>
-              <propertyMap key="valueType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.7"/>
-              <propertyMap key="inputType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.8"/>
-              <propertyMap key="value" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.9"/>
-              <propertyMap key="xcpId" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.10"/>
+              <propertyMap key="store" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.2"/>
+              <propertyMap key="disabled" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.3"/>
+              <propertyMap key="hidden" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.4"/>
+              <propertyMap key="valueField" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.5"/>
+              <propertyMap key="displayField" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.6"/>
+              <propertyMap key="datasourceInstance" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.7"/>
+              <propertyMap key="selectedPickList" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.8"/>
+              <propertyMap key="valueType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.9"/>
+              <propertyMap key="name" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.10"/>
+              <propertyMap key="fieldWidth" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.11"/>
+              <propertyMap key="value" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.12"/>
+              <propertyMap key="xcpId" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2/@properties.13"/>
             </children>
-            <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.2/@children.0/@children.0/@children.1" widgetEntry="//@widgetMap[key='distrito_nacimiento']">
+            <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.2/@children.0/@children.0/@children.1" widgetEntry="//@widgetMap[key='distrito_nacimiento']">
               <properties name="fieldLabel" value="Distrito Nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.0"/>
               <properties name="emptyText" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.1"/>
-              <properties name="name" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.2"/>
-              <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.3"/>
-              <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.4"/>
-              <properties name="readOnly" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.5"/>
-              <properties name="hidden" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.6"/>
-              <properties name="valueType" value="STRING" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.7"/>
-              <properties name="inputType" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.8"/>
-              <properties xsi:type="uitemplate:DataboundProperty" name="value" value="f_involucrado.distrito_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.9"/>
-              <properties name="xcpId" value="distrito_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.10"/>
+              <properties name="store" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.2"/>
+              <properties name="disabled" value="widgets.pais_nacimiento != 'Peru'" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.3"/>
+              <properties name="hidden" value="widgets.tipo_persona.value == 'JURIDICA'" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.4"/>
+              <properties name="valueField" value="distritos" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.5"/>
+              <properties name="displayField" value="distritos" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.6"/>
+              <properties name="datasourceInstance" value="obtener_lista_distr_initiate_staless_ds" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.7"/>
+              <properties name="selectedPickList" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.8"/>
+              <properties name="valueType" value="STRING" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.9"/>
+              <properties name="name" value="" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.10"/>
+              <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.11"/>
+              <properties xsi:type="uitemplate:DataboundProperty" name="value" value="f_involucrado.distrito_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.12"/>
+              <properties name="xcpId" value="distrito_nacimiento" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@propertyMap.13"/>
               <propertyMap key="fieldLabel" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.0"/>
               <propertyMap key="emptyText" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.1"/>
-              <propertyMap key="name" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.2"/>
-              <propertyMap key="hstretch" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.3"/>
-              <propertyMap key="size" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.4"/>
-              <propertyMap key="readOnly" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.5"/>
-              <propertyMap key="hidden" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.6"/>
-              <propertyMap key="valueType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.7"/>
-              <propertyMap key="inputType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.8"/>
-              <propertyMap key="value" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.9"/>
-              <propertyMap key="xcpId" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.10"/>
+              <propertyMap key="store" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.2"/>
+              <propertyMap key="disabled" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.3"/>
+              <propertyMap key="hidden" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.4"/>
+              <propertyMap key="valueField" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.5"/>
+              <propertyMap key="displayField" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.6"/>
+              <propertyMap key="datasourceInstance" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.7"/>
+              <propertyMap key="selectedPickList" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.8"/>
+              <propertyMap key="valueType" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.9"/>
+              <propertyMap key="name" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.10"/>
+              <propertyMap key="fieldWidth" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.11"/>
+              <propertyMap key="value" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.12"/>
+              <propertyMap key="xcpId" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3/@properties.13"/>
             </children>
             <children componentDefinitionId="xcp_dropdown_list_multi" parent="//@rootContainer/@children.2/@children.0/@children.0/@children.1" widgetEntry="//@widgetMap[key='profesion']">
               <properties name="fieldLabel" value="Profesiones" entry="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.4/@propertyMap.0"/>
@@ -1390,13 +1414,9 @@
   <widgetMap key="columnvbox1" value="//@rootContainer/@children.3/@children.0"/>
   <widgetMap key="apellido_materno" value="//@rootContainer/@children.2/@children.0/@children.0/@children.0/@children.2"/>
   <widgetMap key="apellido_paterno" value="//@rootContainer/@children.2/@children.0/@children.0/@children.0/@children.3"/>
-  <widgetMap key="departamento_nacimiento" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1"/>
-  <widgetMap key="distrito_nacimiento" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3"/>
   <widgetMap key="fecha_defuncion" value="//@rootContainer/@children.2/@children.0/@children.0/@children.0/@children.5"/>
   <widgetMap key="fecha_nacimiento" value="//@rootContainer/@children.2/@children.0/@children.0/@children.0/@children.4"/>
   <widgetMap key="nombres" value="//@rootContainer/@children.2/@children.0/@children.0/@children.0/@children.1"/>
-  <widgetMap key="pais_nacimiento" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0"/>
-  <widgetMap key="provincia_nacimiento" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2"/>
   <widgetMap key="column_box3" value="//@rootContainer/@children.0"/>
   <widgetMap key="columnvbox2" value="//@rootContainer/@children.0/@children.0"/>
   <widgetMap key="columnvbox3" value="//@rootContainer/@children.0/@children.1"/>
@@ -1431,12 +1451,37 @@
   <widgetMap key="column_box8" value="//@rootContainer/@children.2/@children.0/@children.1"/>
   <widgetMap key="columnvbox9" value="//@rootContainer/@children.2/@children.0/@children.1/@children.0"/>
   <widgetMap key="fullname" value="//@rootContainer/@children.0/@children.0/@children.0"/>
+  <widgetMap key="pais_nacimiento" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.0"/>
+  <widgetMap key="departamento" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.1"/>
+  <widgetMap key="provincia_nacimiento" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.2"/>
+  <widgetMap key="distrito_nacimiento" value="//@rootContainer/@children.2/@children.0/@children.0/@children.1/@children.3"/>
   <primaryModel href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#/"/>
   <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="obtener_direcciones" label="Obtener Direcciones por Involucrado">
     <inputMappings name="input_object_id">
       <expression exprStr="f_involucrado.id"/>
     </inputMappings>
     <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:uif:com.emc.xcp.artifact.search.realtime:Artifacts/Real-time Queries/obtener_direcciones.realtime#//@datasource"/>
+  </dataSources>
+  <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="obtener_lista_de_pa_initiate_staless_ds" label="Stateless Process Obtener Lista de Paises">
+    <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/obtener_lista_de_pa.process#//@activities[name='Initiate']/@taskContract/@dataServiceContracts[name='obtener_lista_de_pa_initiate_staless_ds']"/>
+  </dataSources>
+  <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="obtener_lista_de_de_initiate_staless_ds" label="Stateless Process Obtener Lista de Departamentos">
+    <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/obtener_lista_de_de.process#//@activities[name='Initiate']/@taskContract/@dataServiceContracts[name='obtener_lista_de_de_initiate_staless_ds']"/>
+  </dataSources>
+  <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="obtener_lista_provi_initiate_staless_ds" label="Stateless Process Obtener Lista Provincias" invokeOnChange="true" invokeOnPageLoad="false">
+    <inputMappings name="departamento">
+      <expression exprStr="f_involucrado.departamento_nacimiento"/>
+    </inputMappings>
+    <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/obtener_lista_provi.process#//@activities[name='Initiate']/@taskContract/@dataServiceContracts[name='obtener_lista_provi_initiate_staless_ds']"/>
+  </dataSources>
+  <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="obtener_lista_distr_initiate_staless_ds" label="Stateless Process Obtener Lista Distritos" invokeOnChange="true" invokeOnPageLoad="false">
+    <inputMappings name="departamento">
+      <expression exprStr="widgets.departamento.value"/>
+    </inputMappings>
+    <inputMappings name="provincia">
+      <expression exprStr="widgets.provincia_nacimiento.value"/>
+    </inputMappings>
+    <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/obtener_lista_distr.process#//@activities[name='Initiate']/@taskContract/@dataServiceContracts[name='obtener_lista_distr_initiate_staless_ds']"/>
   </dataSources>
   <dataActions categoryId="com.emc.xcp.artifact.dataservice.dataaction" name="da_def_update_dm_folder" label="Update Base Folder">
     <inputMappings name="object_name">
@@ -1455,10 +1500,10 @@
       <expression exprStr="widgets.apellido_paterno.value"/>
     </inputMappings>
     <inputMappings name="departamento_nacimiento">
-      <expression exprStr="widgets.departamento_nacimiento.value"/>
+      <expression exprStr=""/>
     </inputMappings>
     <inputMappings name="distrito_nacimiento">
-      <expression exprStr="widgets.distrito_nacimiento.value"/>
+      <expression exprStr=""/>
     </inputMappings>
     <inputMappings name="email">
       <expression exprStr=""/>
@@ -1488,13 +1533,13 @@
       <expression exprStr="widgets.nombres.value"/>
     </inputMappings>
     <inputMappings name="pais_nacimiento">
-      <expression exprStr="widgets.pais_nacimiento.value"/>
+      <expression exprStr=""/>
     </inputMappings>
     <inputMappings name="profesion">
       <expression exprStr=""/>
     </inputMappings>
     <inputMappings name="provincia_nacimiento">
-      <expression exprStr="widgets.provincia_nacimiento.value"/>
+      <expression exprStr=""/>
     </inputMappings>
     <inputMappings name="tipo_persona">
       <expression exprStr=""/>

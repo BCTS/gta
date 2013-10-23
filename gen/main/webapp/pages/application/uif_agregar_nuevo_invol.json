@@ -88,6 +88,70 @@
           "fecha_nacimiento" : ["fecha_nacimiento" ]
         }
       } ]
+    }, {
+      "xcpId" : "obtener_lista_de_pa_initiate_staless_ds",
+      "actionModel" : "uif_obtener_lista_de_pa_initiate_staless_ds_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ ],
+        "mapping" : {
+        }
+      } ],
+      "actionType" : "datasource",
+      "autoLoad" : true
+    }, {
+      "xcpId" : "obtener_lista_de_de_initiate_staless_ds",
+      "actionModel" : "uif_obtener_lista_de_de_initiate_staless_ds_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ ],
+        "mapping" : {
+        }
+      } ],
+      "actionType" : "datasource",
+      "autoLoad" : true
+    }, {
+      "xcpId" : "obtener_lista_provi_initiate_staless_ds",
+      "actionModel" : "uif_obtener_lista_provi_initiate_staless_ds_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "departamento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_obtener_lista_provi_initiate_staless_ds_departamento_1",
+          "events" : ["departamento.change" ]
+        } ],
+        "mapping" : {
+          "departamento" : ["departamento" ]
+        }
+      } ],
+      "actionType" : "datasource",
+      "autoLoad" : true,
+      "invokerEvents" : ["departamento.change" ]
+    }, {
+      "xcpId" : "obtener_lista_distr_initiate_staless_ds",
+      "actionModel" : "uif_obtener_lista_distr_initiate_staless_ds_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "departamento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_obtener_lista_distr_initiate_staless_ds_departamento_1",
+          "events" : ["departamento.change" ]
+        }, {
+          "propertyId" : "provincia",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_obtener_lista_distr_initiate_staless_ds_provincia_1",
+          "events" : ["provincia.change" ]
+        } ],
+        "mapping" : {
+          "departamento" : ["departamento" ],
+          "provincia" : ["provincia" ]
+        }
+      } ],
+      "actionType" : "datasource",
+      "autoLoad" : true,
+      "invokerEvents" : ["departamento.change","provincia.change" ]
     } ]
   }, {
     "xcpId" : "column_box",
@@ -270,7 +334,9 @@
             "xcpId" : "pais",
             "xtype" : "xcp_dropdown_list",
             "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_pais_fieldLabel}",
-            "store" : "xcp.picklist.uif_pl_tipo_persona",
+            "valueField" : "pais",
+            "displayField" : "pais",
+            "store" : "obtener_lista_de_pa_initiate_staless_ds",
             "valueType" : "STRING",
             "plugins" : [ {
               "ptype" : "xcp_expression_properties",
@@ -287,7 +353,9 @@
             "xcpId" : "departamento",
             "xtype" : "xcp_dropdown_list",
             "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_departamento_fieldLabel}",
-            "store" : "xcp.picklist.uif_pl_tipo_poder",
+            "valueField" : "departamentos",
+            "displayField" : "departamentos",
+            "store" : "obtener_lista_de_de_initiate_staless_ds",
             "valueType" : "STRING",
             "plugins" : [ {
               "ptype" : "xcp_expression_properties",
@@ -304,7 +372,9 @@
             "xcpId" : "provincia",
             "xtype" : "xcp_dropdown_list",
             "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_provincia_fieldLabel}",
-            "store" : "xcp.picklist.uif_pl_tipo_persona",
+            "valueField" : "provincias",
+            "displayField" : "provincias",
+            "store" : "obtener_lista_provi_initiate_staless_ds",
             "valueType" : "STRING",
             "plugins" : [ {
               "ptype" : "xcp_expression_properties",
@@ -321,7 +391,9 @@
             "xcpId" : "distrito",
             "xtype" : "xcp_dropdown_list",
             "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_distrito_fieldLabel}",
-            "store" : "xcp.picklist.uif_pl_profesiones",
+            "valueField" : "distritos",
+            "displayField" : "distritos",
+            "store" : "obtener_lista_distr_initiate_staless_ds",
             "valueType" : "STRING",
             "plugins" : [ {
               "ptype" : "xcp_expression_properties",

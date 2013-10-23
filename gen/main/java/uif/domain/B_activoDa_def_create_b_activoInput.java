@@ -120,11 +120,11 @@ public class B_activoDa_def_create_b_activoInput {
     }
 
     @JsonProperty
-    public Map<String, Object> getLinks(){
+    public Map<String, java.lang.Object> getLinks(){
         return LinkSource.getLinks(this);
     }
 
     @JsonIgnore
-    public void setLinks(Map<String, Object> linkSource){
+    public void setLinks(Map<String,  java.lang.Object> linkSource){
     }
 }

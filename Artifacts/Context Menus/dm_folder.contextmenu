@@ -4,7 +4,7 @@
   <items xsi:type="contextmenu:GotoPageItem" label="View">
     <actionProperties name="menu_action_name" value="view"/>
     <actionProperties name="default_link" value="true" type="BOOLEAN"/>
-    <page href="urn:uif:com.emc.xcp.artifact.page:Artifacts/Pages/view_base_folder.page#/"/>
+    <page href="urn:uif:com.emc.xcp.artifact.page:Artifacts/Pages/view_base_folder1.page#/"/>
   </items>
   <items label="New Folder...">
     <actionProperties name="isHidden" value="" type="BOOLEAN"/>

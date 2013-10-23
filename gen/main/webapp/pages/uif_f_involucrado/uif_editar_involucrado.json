@@ -51,16 +51,6 @@
           "etype" : "uif_editar_involucrado_da_def_update_dm_folder_apellido_paterno_1",
           "events" : ["apellido_paterno.change" ]
         }, {
-          "propertyId" : "departamento_nacimiento",
-          "setterFunName" : "setInputProperty",
-          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_departamento_nacimiento_1",
-          "events" : ["departamento_nacimiento.change" ]
-        }, {
-          "propertyId" : "distrito_nacimiento",
-          "setterFunName" : "setInputProperty",
-          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_distrito_nacimiento_1",
-          "events" : ["distrito_nacimiento.change" ]
-        }, {
           "propertyId" : "fecha_defuncion",
           "setterFunName" : "setInputProperty",
           "etype" : "uif_editar_involucrado_da_def_update_dm_folder_fecha_defuncion_1",
@@ -75,29 +65,79 @@
           "setterFunName" : "setInputProperty",
           "etype" : "uif_editar_involucrado_da_def_update_dm_folder_nombres_1",
           "events" : ["nombres.change" ]
-        }, {
-          "propertyId" : "pais_nacimiento",
-          "setterFunName" : "setInputProperty",
-          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_pais_nacimiento_1",
-          "events" : ["pais_nacimiento.change" ]
-        }, {
-          "propertyId" : "provincia_nacimiento",
-          "setterFunName" : "setInputProperty",
-          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_provincia_nacimiento_1",
-          "events" : ["provincia_nacimiento.change" ]
         } ],
         "mapping" : {
           "apellido_materno" : ["apellido_materno" ],
           "apellido_paterno" : ["apellido_paterno" ],
-          "departamento_nacimiento" : ["departamento_nacimiento" ],
-          "distrito_nacimiento" : ["distrito_nacimiento" ],
           "fecha_defuncion" : ["fecha_defuncion" ],
           "fecha_nacimiento" : ["fecha_nacimiento" ],
-          "nombres" : ["nombres" ],
-          "pais_nacimiento" : ["pais_nacimiento" ],
-          "provincia_nacimiento" : ["provincia_nacimiento" ]
+          "nombres" : ["nombres" ]
         }
       } ]
+    }, {
+      "xcpId" : "obtener_lista_de_pa_initiate_staless_ds",
+      "actionModel" : "uif_obtener_lista_de_pa_initiate_staless_ds_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ ],
+        "mapping" : {
+        }
+      } ],
+      "actionType" : "datasource",
+      "autoLoad" : false,
+      "invokerEvents" : ["uif_f_involucrado.change","uif_f_involucrado.load" ]
+    }, {
+      "xcpId" : "obtener_lista_de_de_initiate_staless_ds",
+      "actionModel" : "uif_obtener_lista_de_de_initiate_staless_ds_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ ],
+        "mapping" : {
+        }
+      } ],
+      "actionType" : "datasource",
+      "autoLoad" : false,
+      "invokerEvents" : ["uif_f_involucrado.change","uif_f_involucrado.load" ]
+    }, {
+      "xcpId" : "obtener_lista_provi_initiate_staless_ds",
+      "actionModel" : "uif_obtener_lista_provi_initiate_staless_ds_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "departamento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_obtener_lista_provi_initiate_staless_ds_departamento_1",
+          "events" : ["uif_f_involucrado.change","uif_f_involucrado.load" ]
+        } ],
+        "mapping" : {
+        }
+      } ],
+      "actionType" : "datasource",
+      "autoLoad" : false
+    }, {
+      "xcpId" : "obtener_lista_distr_initiate_staless_ds",
+      "actionModel" : "uif_obtener_lista_distr_initiate_staless_ds_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "departamento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_obtener_lista_distr_initiate_staless_ds_departamento_1",
+          "events" : ["departamento.change" ]
+        }, {
+          "propertyId" : "provincia",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_obtener_lista_distr_initiate_staless_ds_provincia_1",
+          "events" : ["provincia_nacimiento.change" ]
+        } ],
+        "mapping" : {
+          "departamento" : ["departamento" ],
+          "provincia" : ["provincia_nacimiento" ]
+        }
+      } ],
+      "actionType" : "datasource",
+      "autoLoad" : false,
+      "invokerEvents" : ["departamento.change","provincia_nacimiento.change" ]
     } ]
   }, {
     "xcpId" : "column_box3",
@@ -255,32 +295,91 @@
           "defaultMargins" : "5",
           "items" : [ {
             "xcpId" : "pais_nacimiento",
-            "xtype" : "xcp_text_input",
+            "xtype" : "xcp_dropdown_list",
             "fieldLabel" : "${_UI_Page_uif_editar_involucrado_pais_nacimiento_fieldLabel}",
-            "hstretch" : true,
+            "valueField" : "pais",
+            "displayField" : "pais",
+            "store" : "obtener_lista_de_pa_initiate_staless_ds",
             "valueType" : "STRING",
             "name" : "uif_f_involucrado@pais_nacimiento"
           }, {
-            "xcpId" : "departamento_nacimiento",
-            "xtype" : "xcp_text_input",
-            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_departamento_nacimiento_fieldLabel}",
-            "hstretch" : true,
+            "xcpId" : "departamento",
+            "xtype" : "xcp_dropdown_list",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_departamento_fieldLabel}",
+            "valueField" : "departamentos",
+            "displayField" : "departamentos",
+            "store" : "obtener_lista_de_de_initiate_staless_ds",
             "valueType" : "STRING",
-            "name" : "uif_f_involucrado@departamento_nacimiento"
+            "name" : "uif_f_involucrado@departamento_nacimiento",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "disabled",
+                "setterFunName" : "setDisabled",
+                "etype" : "uif_editar_involucrado_departamento_disabled_1",
+                "disableProcessingOnRender" : false,
+                "initialDefaultExprValue" : null
+              }, {
+                "propertyId" : "hidden",
+                "setterFunName" : "setHidden",
+                "etype" : "uif_editar_involucrado_departamento_hidden_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : true,
+                "initialDefaultExprValue" : "true"
+              } ]
+            } ]
           }, {
             "xcpId" : "provincia_nacimiento",
-            "xtype" : "xcp_text_input",
+            "xtype" : "xcp_dropdown_list",
             "fieldLabel" : "${_UI_Page_uif_editar_involucrado_provincia_nacimiento_fieldLabel}",
-            "hstretch" : true,
+            "valueField" : "provincias",
+            "displayField" : "provincias",
+            "store" : "obtener_lista_provi_initiate_staless_ds",
             "valueType" : "STRING",
-            "name" : "uif_f_involucrado@provincia_nacimiento"
+            "name" : "uif_f_involucrado@provincia_nacimiento",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "disabled",
+                "setterFunName" : "setDisabled",
+                "etype" : "uif_editar_involucrado_provincia_nacimiento_disabled_1",
+                "disableProcessingOnRender" : false,
+                "initialDefaultExprValue" : null
+              }, {
+                "propertyId" : "hidden",
+                "setterFunName" : "setHidden",
+                "etype" : "uif_editar_involucrado_provincia_nacimiento_hidden_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : true,
+                "initialDefaultExprValue" : "true"
+              } ]
+            } ]
           }, {
             "xcpId" : "distrito_nacimiento",
-            "xtype" : "xcp_text_input",
+            "xtype" : "xcp_dropdown_list",
             "fieldLabel" : "${_UI_Page_uif_editar_involucrado_distrito_nacimiento_fieldLabel}",
-            "hstretch" : true,
+            "valueField" : "distritos",
+            "displayField" : "distritos",
+            "store" : "obtener_lista_distr_initiate_staless_ds",
             "valueType" : "STRING",
-            "name" : "uif_f_involucrado@distrito_nacimiento"
+            "name" : "uif_f_involucrado@distrito_nacimiento",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "disabled",
+                "setterFunName" : "setDisabled",
+                "etype" : "uif_editar_involucrado_distrito_nacimiento_disabled_1",
+                "disableProcessingOnRender" : false,
+                "initialDefaultExprValue" : null
+              }, {
+                "propertyId" : "hidden",
+                "setterFunName" : "setHidden",
+                "etype" : "uif_editar_involucrado_distrito_nacimiento_hidden_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : true,
+                "initialDefaultExprValue" : "true"
+              } ]
+            } ]
           }, {
             "xcpId" : "profesion",
             "xtype" : "xcp_dropdown_list_multi",

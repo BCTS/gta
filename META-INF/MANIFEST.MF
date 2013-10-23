@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Require-Bundle: xcpcore, xcpcommons
+Require-Bundle: xcpcommons, xcpcore
 Bundle-Version: 1.0.0
 Bundle-Name: gta
 Bundle-ManifestVersion: 2

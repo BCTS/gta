@@ -43,11 +43,11 @@ public class R_inv_cuentaDa_def_delete_r_inv_cuentaInput {
     }
 
     @JsonProperty
-    public Map<String, Object> getLinks(){
+    public Map<String, java.lang.Object> getLinks(){
         return LinkSource.getLinks(this);
     }
 
     @JsonIgnore
-    public void setLinks(Map<String, Object> linkSource){
+    public void setLinks(Map<String,  java.lang.Object> linkSource){
     }
 }

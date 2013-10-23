@@ -208,11 +208,11 @@ public class B_direccionDa_def_update_b_direccionInput {
     }
 
     @JsonProperty
-    public Map<String, Object> getLinks(){
+    public Map<String, java.lang.Object> getLinks(){
         return LinkSource.getLinks(this);
     }
 
     @JsonIgnore
-    public void setLinks(Map<String, Object> linkSource){
+    public void setLinks(Map<String,  java.lang.Object> linkSource){
     }
 }
