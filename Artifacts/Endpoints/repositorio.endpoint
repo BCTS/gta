@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsEndpoint:RepositoryEndpoint xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:nsEndpoint="http://xcp.emc.com/endpoint" urn="urn:uif:com.emc.xcp.artifact.endpoint:Artifacts/Endpoints/repositorio.endpoint" categoryId="com.emc.xcp.artifact.endpoint" name="repositorio" label="repositorio" docbrokerHostName="54.232.217.111" repositoryName="documentum" username="dmadmin" password="DM_ENCR_TEXT_V2=AAAAEKy1GlKd3L2+/8MCFkLodKscabHlZLwkC84E1jCSq5hU7AgUekfG1g+kZPqeeOnQqM9rnR+/i6i3hqrp3PJMF4jG8JjaqnKAYqED5MmXrnJr"/>

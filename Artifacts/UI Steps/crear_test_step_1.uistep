@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionflow:UIStep xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actionflow="http://www.emc.com/xcp2/2010/actionflow" xmlns:nsDataservice="http://xcp.emc.com/Dataservice" xmlns:uitemplate="http://www.emc.com/xcp2/2010/uitemplate" urn="urn:uif:com.emc.xcp.artifact.uistep:Artifacts/UI Steps/crear_test_step_1.uistep" categoryId="com.emc.xcp.artifact.uistep" name="crear_test_step_1" label="Step 1" templateType="uistep">
+  <rootContainer widgetEntry="//@widgetMap[key='root']">
+    <properties name="xcpId" value="root" entry="//@rootContainer/@propertyMap.0"/>
+    <propertyMap key="xcpId" value="//@rootContainer/@properties.0"/>
+    <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_column_box" parent="//@rootContainer" widgetEntry="//@widgetMap[key='column_box']">
+      <properties name="title" value="" entry="//@rootContainer/@children.0/@propertyMap.0"/>
+      <properties name="collapsible" value="false" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.1"/>
+      <properties name="collapsed" value="false" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.2"/>
+      <properties name="collapseFirst" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.3"/>
+      <properties name="border" value="false" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.4"/>
+      <properties name="defaultMargins" value="5" entry="//@rootContainer/@children.0/@propertyMap.5"/>
+      <properties name="margins" value="" entry="//@rootContainer/@children.0/@propertyMap.6"/>
+      <properties name="layout" value="xcp_columnbox" entry="//@rootContainer/@children.0/@propertyMap.7"/>
+      <properties name="hidden" value="" entry="//@rootContainer/@children.0/@propertyMap.8"/>
+      <properties name="cls" value="" entry="//@rootContainer/@children.0/@propertyMap.9"/>
+      <properties name="xcpId" value="column_box" entry="//@rootContainer/@children.0/@propertyMap.10"/>
+      <propertyMap key="title" value="//@rootContainer/@children.0/@properties.0"/>
+      <propertyMap key="collapsible" value="//@rootContainer/@children.0/@properties.1"/>
+      <propertyMap key="collapsed" value="//@rootContainer/@children.0/@properties.2"/>
+      <propertyMap key="collapseFirst" value="//@rootContainer/@children.0/@properties.3"/>
+      <propertyMap key="border" value="//@rootContainer/@children.0/@properties.4"/>
+      <propertyMap key="defaultMargins" value="//@rootContainer/@children.0/@properties.5"/>
+      <propertyMap key="margins" value="//@rootContainer/@children.0/@properties.6"/>
+      <propertyMap key="layout" value="//@rootContainer/@children.0/@properties.7"/>
+      <propertyMap key="hidden" value="//@rootContainer/@children.0/@properties.8"/>
+      <propertyMap key="cls" value="//@rootContainer/@children.0/@properties.9"/>
+      <propertyMap key="xcpId" value="//@rootContainer/@children.0/@properties.10"/>
+      <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_columnvbox" parent="//@rootContainer/@children.0" widgetEntry="//@widgetMap[key='columnvbox']">
+        <properties name="orientation" value="Vertical" entry="//@rootContainer/@children.0/@children.0/@propertyMap.0"/>
+        <properties name="width" value="100%" entry="//@rootContainer/@children.0/@children.0/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@propertyMap.2"/>
+        <properties name="split" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@propertyMap.3"/>
+        <properties name="overflow_x" value="hidden" entry="//@rootContainer/@children.0/@children.0/@propertyMap.4"/>
+        <properties name="labelWidth" value="150" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@propertyMap.5"/>
+        <properties name="labelAlign" value="left" entry="//@rootContainer/@children.0/@children.0/@propertyMap.6"/>
+        <properties name="halign" value="left" entry="//@rootContainer/@children.0/@children.0/@propertyMap.7"/>
+        <properties name="valign" value="top" entry="//@rootContainer/@children.0/@children.0/@propertyMap.8"/>
+        <properties name="defaultMargins" value="5" entry="//@rootContainer/@children.0/@children.0/@propertyMap.9"/>
+        <properties name="margins" value="" entry="//@rootContainer/@children.0/@children.0/@propertyMap.10"/>
+        <properties name="xcpId" value="columnvbox" entry="//@rootContainer/@children.0/@children.0/@propertyMap.11"/>
+        <propertyMap key="orientation" value="//@rootContainer/@children.0/@children.0/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.0/@children.0/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.0/@children.0/@properties.2"/>
+        <propertyMap key="split" value="//@rootContainer/@children.0/@children.0/@properties.3"/>
+        <propertyMap key="overflow_x" value="//@rootContainer/@children.0/@children.0/@properties.4"/>
+        <propertyMap key="labelWidth" value="//@rootContainer/@children.0/@children.0/@properties.5"/>
+        <propertyMap key="labelAlign" value="//@rootContainer/@children.0/@children.0/@properties.6"/>
+        <propertyMap key="halign" value="//@rootContainer/@children.0/@children.0/@properties.7"/>
+        <propertyMap key="valign" value="//@rootContainer/@children.0/@children.0/@properties.8"/>
+        <propertyMap key="defaultMargins" value="//@rootContainer/@children.0/@children.0/@properties.9"/>
+        <propertyMap key="margins" value="//@rootContainer/@children.0/@children.0/@properties.10"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@properties.11"/>
+        <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_multivalue_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='alias']">
+          <properties name="fieldLabel" value="alias" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.0"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.1"/>
+          <properties name="height" value="150" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.2"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.4"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.5"/>
+          <properties name="isRepeating" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.6"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.alias" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.7"/>
+          <properties name="xcpId" value="alias" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.8"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.0"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.1"/>
+          <propertyMap key="height" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.2"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.4"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.5"/>
+          <propertyMap key="isRepeating" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.6"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.7"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.8"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='apellido_materno']">
+          <properties name="fieldLabel" value="apellido_materno" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.apellido_materno" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.9"/>
+          <properties name="xcpId" value="apellido_materno" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='apellido_paterno']">
+          <properties name="fieldLabel" value="apellido_paterno" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.apellido_paterno" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.9"/>
+          <properties name="xcpId" value="apellido_paterno" entry="//@rootContainer/@children.0/@children.0/@children.2/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.2/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='departamento_nacimiento']">
+          <properties name="fieldLabel" value="departamento_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.departamento_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.9"/>
+          <properties name="xcpId" value="departamento_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.3/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.3/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='distrito_nacimiento']">
+          <properties name="fieldLabel" value="distrito_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.distrito_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.9"/>
+          <properties name="xcpId" value="distrito_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.4/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.4/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_multivalue_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='email']">
+          <properties name="fieldLabel" value="email" entry="//@rootContainer/@children.0/@children.0/@children.5/@propertyMap.0"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.5/@propertyMap.1"/>
+          <properties name="height" value="150" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.5/@propertyMap.2"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.5/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.5/@propertyMap.4"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.5/@propertyMap.5"/>
+          <properties name="isRepeating" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.5/@propertyMap.6"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.email" entry="//@rootContainer/@children.0/@children.0/@children.5/@propertyMap.7"/>
+          <properties name="xcpId" value="email" entry="//@rootContainer/@children.0/@children.0/@children.5/@propertyMap.8"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.5/@properties.0"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.5/@properties.1"/>
+          <propertyMap key="height" value="//@rootContainer/@children.0/@children.0/@children.5/@properties.2"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.5/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.5/@properties.4"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.5/@properties.5"/>
+          <propertyMap key="isRepeating" value="//@rootContainer/@children.0/@children.0/@children.5/@properties.6"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.5/@properties.7"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.5/@properties.8"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='estado']">
+          <properties name="fieldLabel" value="estado" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.estado" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.9"/>
+          <properties name="xcpId" value="estado" entry="//@rootContainer/@children.0/@children.0/@children.6/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.6/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='estado_civil']">
+          <properties name="fieldLabel" value="estado_civil" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.1"/>
+          <properties name="store" value="xcp.picklist.uif_pl_estado_civil" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.2"/>
+          <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.4"/>
+          <properties name="valueField" value="" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.5"/>
+          <properties name="displayField" value="" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.6"/>
+          <properties name="datasourceInstance" value="" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.7"/>
+          <properties name="selectedPickList" value="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_estado_civil.picklist" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.8"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.9"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.10"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.11"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.estado_civil" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.12"/>
+          <properties name="xcpId" value="estado_civil" entry="//@rootContainer/@children.0/@children.0/@children.7/@propertyMap.13"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.1"/>
+          <propertyMap key="store" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.2"/>
+          <propertyMap key="disabled" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.4"/>
+          <propertyMap key="valueField" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.5"/>
+          <propertyMap key="displayField" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.6"/>
+          <propertyMap key="datasourceInstance" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.7"/>
+          <propertyMap key="selectedPickList" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.8"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.9"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.10"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.11"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.12"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.7/@properties.13"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_multivalue_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='falsos_nombres']">
+          <properties name="fieldLabel" value="falsos_nombres" entry="//@rootContainer/@children.0/@children.0/@children.8/@propertyMap.0"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.8/@propertyMap.1"/>
+          <properties name="height" value="150" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.8/@propertyMap.2"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.8/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.8/@propertyMap.4"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.8/@propertyMap.5"/>
+          <properties name="isRepeating" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.8/@propertyMap.6"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.falsos_nombres" entry="//@rootContainer/@children.0/@children.0/@children.8/@propertyMap.7"/>
+          <properties name="xcpId" value="falsos_nombres" entry="//@rootContainer/@children.0/@children.0/@children.8/@propertyMap.8"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.8/@properties.0"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.8/@properties.1"/>
+          <propertyMap key="height" value="//@rootContainer/@children.0/@children.0/@children.8/@properties.2"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.8/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.8/@properties.4"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.8/@properties.5"/>
+          <propertyMap key="isRepeating" value="//@rootContainer/@children.0/@children.0/@children.8/@properties.6"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.8/@properties.7"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.8/@properties.8"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_date_time_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='fecha_defuncion']">
+          <properties name="fieldLabel" value="fecha_defuncion" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.3"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.4"/>
+          <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.6"/>
+          <properties name="valueType" value="DATETIME" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.7"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.fecha_defuncion" type="DATETIME" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.9">
+            <formatter componentDefinitionId="xcp_datetime_formatter">
+              <properties name="xtype" value="xcp_datetime_formatter" entry="//@rootContainer/@children.0/@children.0/@children.9/@properties.9/@formatter/@propertyMap.0"/>
+              <properties name="dateFormat" value="short" entry="//@rootContainer/@children.0/@children.0/@children.9/@properties.9/@formatter/@propertyMap.1"/>
+              <properties name="timeFormat" value="short" entry="//@rootContainer/@children.0/@children.0/@children.9/@properties.9/@formatter/@propertyMap.2"/>
+              <properties name="dateStyle" value="datetime" entry="//@rootContainer/@children.0/@children.0/@children.9/@properties.9/@formatter/@propertyMap.3"/>
+              <propertyMap key="xtype" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.9/@formatter/@properties.0"/>
+              <propertyMap key="dateFormat" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.9/@formatter/@properties.1"/>
+              <propertyMap key="timeFormat" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.9/@formatter/@properties.2"/>
+              <propertyMap key="dateStyle" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.9/@formatter/@properties.3"/>
+            </formatter>
+          </properties>
+          <properties name="xcpId" value="fecha_defuncion" entry="//@rootContainer/@children.0/@children.0/@children.9/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.3"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.4"/>
+          <propertyMap key="disabled" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.7"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.8"/>
+          <propertyMap key="format" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.9/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_date_time_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='fecha_nacimiento']">
+          <properties name="fieldLabel" value="fecha_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.3"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.4"/>
+          <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.6"/>
+          <properties name="valueType" value="DATETIME" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.7"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.fecha_nacimiento" type="DATETIME" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.9">
+            <formatter componentDefinitionId="xcp_datetime_formatter">
+              <properties name="xtype" value="xcp_datetime_formatter" entry="//@rootContainer/@children.0/@children.0/@children.10/@properties.9/@formatter/@propertyMap.0"/>
+              <properties name="dateFormat" value="short" entry="//@rootContainer/@children.0/@children.0/@children.10/@properties.9/@formatter/@propertyMap.1"/>
+              <properties name="timeFormat" value="short" entry="//@rootContainer/@children.0/@children.0/@children.10/@properties.9/@formatter/@propertyMap.2"/>
+              <properties name="dateStyle" value="datetime" entry="//@rootContainer/@children.0/@children.0/@children.10/@properties.9/@formatter/@propertyMap.3"/>
+              <propertyMap key="xtype" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.9/@formatter/@properties.0"/>
+              <propertyMap key="dateFormat" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.9/@formatter/@properties.1"/>
+              <propertyMap key="timeFormat" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.9/@formatter/@properties.2"/>
+              <propertyMap key="dateStyle" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.9/@formatter/@properties.3"/>
+            </formatter>
+          </properties>
+          <properties name="xcpId" value="fecha_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.10/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.3"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.4"/>
+          <propertyMap key="disabled" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.7"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.8"/>
+          <propertyMap key="format" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.10/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='fullname']">
+          <properties name="fieldLabel" value="fullname" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.fullname" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.9"/>
+          <properties name="xcpId" value="fullname" entry="//@rootContainer/@children.0/@children.0/@children.11/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.11/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='genero']">
+          <properties name="fieldLabel" value="genero" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.1"/>
+          <properties name="store" value="xcp.picklist.uif_pl_genero" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.2"/>
+          <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.4"/>
+          <properties name="valueField" value="" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.5"/>
+          <properties name="displayField" value="" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.6"/>
+          <properties name="datasourceInstance" value="" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.7"/>
+          <properties name="selectedPickList" value="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_genero.picklist" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.8"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.9"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.10"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.11"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.genero" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.12"/>
+          <properties name="xcpId" value="genero" entry="//@rootContainer/@children.0/@children.0/@children.12/@propertyMap.13"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.1"/>
+          <propertyMap key="store" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.2"/>
+          <propertyMap key="disabled" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.4"/>
+          <propertyMap key="valueField" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.5"/>
+          <propertyMap key="displayField" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.6"/>
+          <propertyMap key="datasourceInstance" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.7"/>
+          <propertyMap key="selectedPickList" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.8"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.9"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.10"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.11"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.12"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.12/@properties.13"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_multivalue_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='idiomas']">
+          <properties name="fieldLabel" value="idiomas" entry="//@rootContainer/@children.0/@children.0/@children.13/@propertyMap.0"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.13/@propertyMap.1"/>
+          <properties name="height" value="150" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.13/@propertyMap.2"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.13/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.13/@propertyMap.4"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.13/@propertyMap.5"/>
+          <properties name="isRepeating" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.13/@propertyMap.6"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.idiomas" entry="//@rootContainer/@children.0/@children.0/@children.13/@propertyMap.7"/>
+          <properties name="xcpId" value="idiomas" entry="//@rootContainer/@children.0/@children.0/@children.13/@propertyMap.8"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.13/@properties.0"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.13/@properties.1"/>
+          <propertyMap key="height" value="//@rootContainer/@children.0/@children.0/@children.13/@properties.2"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.13/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.13/@properties.4"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.13/@properties.5"/>
+          <propertyMap key="isRepeating" value="//@rootContainer/@children.0/@children.0/@children.13/@properties.6"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.13/@properties.7"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.13/@properties.8"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='nombres']">
+          <properties name="fieldLabel" value="nombres" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.nombres" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.9"/>
+          <properties name="xcpId" value="nombres" entry="//@rootContainer/@children.0/@children.0/@children.14/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.14/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='pais_nacimiento']">
+          <properties name="fieldLabel" value="pais_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.pais_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.9"/>
+          <properties name="xcpId" value="pais_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.15/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.15/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_multivalue_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='profesion']">
+          <properties name="fieldLabel" value="profesion" entry="//@rootContainer/@children.0/@children.0/@children.16/@propertyMap.0"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.16/@propertyMap.1"/>
+          <properties name="height" value="150" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.16/@propertyMap.2"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.16/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.16/@propertyMap.4"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.16/@propertyMap.5"/>
+          <properties name="isRepeating" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.16/@propertyMap.6"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.profesion" entry="//@rootContainer/@children.0/@children.0/@children.16/@propertyMap.7"/>
+          <properties name="xcpId" value="profesion" entry="//@rootContainer/@children.0/@children.0/@children.16/@propertyMap.8"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.16/@properties.0"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.16/@properties.1"/>
+          <propertyMap key="height" value="//@rootContainer/@children.0/@children.0/@children.16/@properties.2"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.16/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.16/@properties.4"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.16/@properties.5"/>
+          <propertyMap key="isRepeating" value="//@rootContainer/@children.0/@children.0/@children.16/@properties.6"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.16/@properties.7"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.16/@properties.8"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='provincia_nacimiento']">
+          <properties name="fieldLabel" value="provincia_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.provincia_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.9"/>
+          <properties name="xcpId" value="provincia_nacimiento" entry="//@rootContainer/@children.0/@children.0/@children.17/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.17/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_dropdown_list" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='tipo_persona']">
+          <properties name="fieldLabel" value="tipo_persona" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.1"/>
+          <properties name="store" value="xcp.picklist.uif_pl_tipo_persona" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.2"/>
+          <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.4"/>
+          <properties name="valueField" value="" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.5"/>
+          <properties name="displayField" value="" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.6"/>
+          <properties name="datasourceInstance" value="" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.7"/>
+          <properties name="selectedPickList" value="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_tipo_persona.picklist" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.8"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.9"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.10"/>
+          <properties name="fieldWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.11"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.tipo_persona" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.12"/>
+          <properties name="xcpId" value="tipo_persona" entry="//@rootContainer/@children.0/@children.0/@children.18/@propertyMap.13"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.1"/>
+          <propertyMap key="store" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.2"/>
+          <propertyMap key="disabled" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.4"/>
+          <propertyMap key="valueField" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.5"/>
+          <propertyMap key="displayField" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.6"/>
+          <propertyMap key="datasourceInstance" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.7"/>
+          <propertyMap key="selectedPickList" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.8"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.9"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.10"/>
+          <propertyMap key="fieldWidth" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.11"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.12"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.18/@properties.13"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+        <children componentDefinitionId="xcp_text_input" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='object_name']">
+          <properties name="fieldLabel" value="Name" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.0"/>
+          <properties name="emptyText" value="" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.1"/>
+          <properties name="name" value="" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.2"/>
+          <properties name="hstretch" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.3"/>
+          <properties name="size" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.4"/>
+          <properties name="readOnly" value="" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.5"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.6"/>
+          <properties name="valueType" value="STRING" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.7"/>
+          <properties name="inputType" value="" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.8"/>
+          <properties xsi:type="uitemplate:DataboundProperty" name="value" value="Inputs.object_name" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.9"/>
+          <properties name="xcpId" value="object_name" entry="//@rootContainer/@children.0/@children.0/@children.19/@propertyMap.10"/>
+          <propertyMap key="fieldLabel" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.0"/>
+          <propertyMap key="emptyText" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.1"/>
+          <propertyMap key="name" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.2"/>
+          <propertyMap key="hstretch" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.3"/>
+          <propertyMap key="size" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.4"/>
+          <propertyMap key="readOnly" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.5"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.6"/>
+          <propertyMap key="valueType" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.7"/>
+          <propertyMap key="inputType" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.8"/>
+          <propertyMap key="value" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.9"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.19/@properties.10"/>
+          <dataService xsi:type="nsDataservice:DataAction" href="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow#//@dataActions[name='da_actionflow_crear_test']"/>
+        </children>
+      </children>
+    </children>
+  </rootContainer>
+  <widgetMap key="root" value="//@rootContainer"/>
+  <widgetMap key="column_box" value="//@rootContainer/@children.0"/>
+  <widgetMap key="columnvbox" value="//@rootContainer/@children.0/@children.0"/>
+  <widgetMap key="alias" value="//@rootContainer/@children.0/@children.0/@children.0"/>
+  <widgetMap key="apellido_materno" value="//@rootContainer/@children.0/@children.0/@children.1"/>
+  <widgetMap key="apellido_paterno" value="//@rootContainer/@children.0/@children.0/@children.2"/>
+  <widgetMap key="departamento_nacimiento" value="//@rootContainer/@children.0/@children.0/@children.3"/>
+  <widgetMap key="distrito_nacimiento" value="//@rootContainer/@children.0/@children.0/@children.4"/>
+  <widgetMap key="email" value="//@rootContainer/@children.0/@children.0/@children.5"/>
+  <widgetMap key="estado" value="//@rootContainer/@children.0/@children.0/@children.6"/>
+  <widgetMap key="estado_civil" value="//@rootContainer/@children.0/@children.0/@children.7"/>
+  <widgetMap key="falsos_nombres" value="//@rootContainer/@children.0/@children.0/@children.8"/>
+  <widgetMap key="fecha_defuncion" value="//@rootContainer/@children.0/@children.0/@children.9"/>
+  <widgetMap key="fecha_nacimiento" value="//@rootContainer/@children.0/@children.0/@children.10"/>
+  <widgetMap key="fullname" value="//@rootContainer/@children.0/@children.0/@children.11"/>
+  <widgetMap key="genero" value="//@rootContainer/@children.0/@children.0/@children.12"/>
+  <widgetMap key="idiomas" value="//@rootContainer/@children.0/@children.0/@children.13"/>
+  <widgetMap key="nombres" value="//@rootContainer/@children.0/@children.0/@children.14"/>
+  <widgetMap key="pais_nacimiento" value="//@rootContainer/@children.0/@children.0/@children.15"/>
+  <widgetMap key="profesion" value="//@rootContainer/@children.0/@children.0/@children.16"/>
+  <widgetMap key="provincia_nacimiento" value="//@rootContainer/@children.0/@children.0/@children.17"/>
+  <widgetMap key="tipo_persona" value="//@rootContainer/@children.0/@children.0/@children.18"/>
+  <widgetMap key="object_name" value="//@rootContainer/@children.0/@children.0/@children.19"/>
+  <primaryModel href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#/"/>
+</actionflow:UIStep>

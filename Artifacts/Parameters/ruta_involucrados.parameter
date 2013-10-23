@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsAppParameter:AppParameter xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAppParameter="http://xcp2.emc.com/appconfiguration" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" urn="urn:uif:com.emc.xcp.artifact.appparameter:Artifacts/Parameters/ruta_involucrados.parameter" categoryId="com.emc.xcp.artifact.appparameter" name="ruta_involucrados" label="ruta_involucrados" description="Ubicación en el repositorio donde se almacena la información de los involucrados detectados por el Departamento de Análisis Operativo" value="/GTA/involucrados_dao">
+  <type xsi:type="nsAttributeDatatypes:StringType"/>
+</nsAppParameter:AppParameter>

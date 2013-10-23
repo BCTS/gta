@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsProcess:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsActivity="http://documentum.com/bpm/activity" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsCommon="http://documentum.com/common" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" xmlns:nsProcess="http://documentum.com/bpm/process" urn="urn:uif:com.emc.ide.artifact.process:Artifacts/Processes/crear_direccion_en_.process" categoryId="com.emc.ide.artifact.process" name="crear_direccion_en_" label="Crear Direccion en Involucrado" description="" webServiceTargetNamespace="" workflowInstructions="" synchronous="true">
+  <activities name="Initiate" activityType="INITIATE" priority="Medium" taskName="" taskInstructions="" destFlows="//@flows[name='L1']">
+    <trigger canRunMultipleTimes="true"/>
+    <transition xsi:type="nsActivity:AllFlowsTransition"/>
+    <uiinfo imageScale="100" image="palette/event_start_32_proc.png">
+      <topLeftPoint x="50" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </uiinfo>
+    <performerConfig xsi:type="nsActivity:DefaultInitiatePerformerConfiguration"/>
+    <packageCharacteristics key="//@processData/@packages[name='involucrado']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+    <packageCharacteristics key="//@processData/@packages[name='direccion']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_via']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='departamento']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='distrito']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='numero_interiores']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='nombre_via']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='provincia']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_numero']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='pais']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='id_involucrado']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_zona']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='nombre_zona']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='numero_exteriores']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <taskContract categoryId="com.emc.ide.artifact.process.activity.taskcontract" name="crear_direccion_en__initiate" label="Initiate">
+      <dataServiceContracts xsi:type="nsDataserviceContract:DataActionContract" categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_create_crear_direccion_en__initiate" label="Initiate Process Crear Direccion en Involucrado" implCategoryId="com.emc.ide.artifact.process.activity.taskcontract">
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processVariables" label="Variables">
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="departamento" label="departamento">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="distrito" label="distrito">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="id_involucrado" label="id_involucrado">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="nombre_via" label="nombre_via">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="nombre_zona" label="nombre_zona">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="numero_exteriores" label="numero_exteriores">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="numero_interiores" label="numero_interiores">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="pais" label="pais">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="provincia" label="provincia">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="tipo_numero" label="tipo_numero">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="tipo_via" label="tipo_via">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:AttributeElement" name="tipo_zona" label="tipo_zona">
+            <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+          </elements>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:StructureElement" name="processPackages" label="Packages">
+          <elements xsi:type="nsDataserviceContract:StructureElement" name="direccion" label="direccion">
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="object_name" label="Name">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="ciudad" label="ciudad">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="codigo_postal" label="codigo_postal">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="comentario" label="comentario">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="departamento" label="departamento">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="distrito" label="distrito">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="nombre_via" label="nombre_via">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="nombre_zona" label="nombre_zona">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="numero_exteriores" label="numero_exteriores">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="numero_interiores" label="numero_interiores">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="pais" label="pais">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="provincia" label="provincia">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="tipo_numero" label="tipo_numero">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="tipo_via" label="tipo_via">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="tipo_zona" label="tipo_zona">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="id" label="Object Id">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+          </elements>
+          <elements xsi:type="nsDataserviceContract:StructureElement" name="involucrado" label="involucrado">
+            <elements xsi:type="nsDataserviceContract:AttributeElement" name="id" label="Object Id">
+              <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+            </elements>
+          </elements>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="attachments" label="Attachments" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <primaryElement name="crear_direccion_en__initiate" dataModel="//@activities[name='Initiate']/@taskContract"/>
+        <actionType type="Create"/>
+      </dataServiceContracts>
+      <dataServiceContracts xsi:type="nsDataserviceContract:DataActionContract" categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_invoke_stateless_processcrear_direccion_en__initiate" label="Stateless Process Crear Direccion en Involucrado" implCategoryId="com.emc.ide.artifact.process.activity.taskcontract">
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="departamento" label="departamento">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="distrito" label="distrito">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id_involucrado" label="id_involucrado">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="nombre_via" label="nombre_via">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="nombre_zona" label="nombre_zona">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="numero_exteriores" label="numero_exteriores">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="numero_interiores" label="numero_interiores">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="pais" label="pais">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="provincia" label="provincia">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="tipo_numero" label="tipo_numero">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="tipo_via" label="tipo_via">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <inputs xsi:type="nsDataserviceContract:AttributeElement" name="tipo_zona" label="tipo_zona">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </inputs>
+        <primaryElement name="crear_direccion_en__initiate" dataModel="//@activities[name='Initiate']/@taskContract"/>
+        <actionType type="InitiateStatelessProcess"/>
+      </dataServiceContracts>
+    </taskContract>
+  </activities>
+  <activities name="Crear Direccion" description="" priority="Medium" taskName="" taskInstructions="" sourceFlows="//@flows[name='L3']" destFlows="//@flows[name='L2']">
+    <trigger expectedEventName="" canRunMultipleTimes="true"/>
+    <transition xsi:type="nsActivity:AllFlowsTransition"/>
+    <timers/>
+    <calendar flag="Performer"/>
+    <uiinfo imageScale="100" image="activity_autoint_48x32_proc.png">
+      <topLeftPoint x="204" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </uiinfo>
+    <performerConfig xsi:type="nsActivity:SvcDefBasedOutboundPerformerConfiguration" timeout="60" serviceDefinition="&lt;?xml version=&quot;1.0&quot;?>&#xA;&lt;ServiceDefinition xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;activity.xsd&quot;>&#xA;    &lt;Name>Create&lt;/Name>&#xA;    &lt;RuntimeModuleName>CreateRuntimeModule&lt;/RuntimeModuleName>&#xA;    &lt;DesignModuleName>CreateDesigntimeModule&lt;/DesignModuleName>&#xA;    &lt;Configuration>&#xA;        &lt;Parameter>&#xA;            &lt;Name>CREATE_FROM&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[CREATE_FROM_MODEL]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>MODEL_URN&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>MODEL_LABEL&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[Direccion]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>MODEL_TYPE_NAME&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[uif_b_direccion]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;        &lt;Parameter>&#xA;            &lt;Name>DESTINATION&lt;/Name>&#xA;            &lt;Value>&lt;![CDATA[DESTINATION_FOLDER_PATH]]>&lt;/Value>&#xA;            &lt;Type>String&lt;/Type>&#xA;        &lt;/Parameter>&#xA;    &lt;/Configuration>&#xA;    &lt;InputMsgCopyRules>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Concat&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>41&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Packages/involucrado/r_folder_path[0]&lt;/Value>&#xA;                &lt;Value>&quot;/DIRECCIONES&quot;&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/dest_folder_path[0]&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>89&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/pais&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}pais&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>105&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/departamento&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}departamento&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>121&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/provincia&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}provincia&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>137&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/distrito&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}distrito&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>185&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/tipo_zona&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}tipo_zona&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>201&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/nombre_zona&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}nombre_zona&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>217&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/tipo_via&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}tipo_via&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>233&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/nombre_via&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}nombre_via&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>249&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/tipo_numero&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}tipo_numero&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>265&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/numero_exteriores&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}numero_exteriores&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>281&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/numero_interiores&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/create/{b_direccion}numero_interiores&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;    &lt;/InputMsgCopyRules>&#xA;    &lt;OutputMsgCopyRules>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>45&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/create/Id&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/Process Data/Packages/direccion/r_object_id&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;    &lt;/OutputMsgCopyRules>&#xA;    &lt;CorrelationMsgCopyRules/>&#xA;    &lt;UserDefinedInputTreeNodes/>&#xA;    &lt;UserDefinedOutputTreeNodes/>&#xA;    &lt;InputSchemaConfigs/>&#xA;    &lt;OutputSchemaConfigs/>&#xA;&lt;/ServiceDefinition>&#xA;">
+      <performer>
+        <dataResolutionConfig xsi:type="nsCommon:PredefinedResolutionConfig"/>
+      </performer>
+      <methodFailure/>
+    </performerConfig>
+    <packageCharacteristics key="//@processData/@packages[name='involucrado']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+    <packageCharacteristics key="//@processData/@packages[name='direccion']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='nombre_zona']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='id_involucrado']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='pais']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_via']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='nombre_via']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_numero']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='numero_interiores']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_zona']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='distrito']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='numero_exteriores']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='provincia']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='departamento']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <eventConfigs label="Activity Completed">
+      <triggerType type="PROCESS_ACTIVITY_COMPLETED"/>
+    </eventConfigs>
+  </activities>
+  <activities name="Relacionar Involucrado con Direccion" activityType="END" description="" priority="Medium" taskName="" taskInstructions="" sourceFlows="//@flows[name='L2']">
+    <trigger expectedEventName="" canRunMultipleTimes="true"/>
+    <transition xsi:type="nsActivity:AllFlowsTransition"/>
+    <timers/>
+    <calendar flag="Performer"/>
+    <uiinfo imageScale="100" image="activity_autoint_48x32_proc.png">
+      <topLeftPoint x="290" y="162"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </uiinfo>
+    <performerConfig xsi:type="nsActivity:SvcDefBasedOutboundPerformerConfiguration" timeout="60" serviceDefinition="&lt;?xml version=&quot;1.0&quot;?>&#xA;&lt;ServiceDefinition xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;activity.xsd&quot;>&#xA;    &lt;Name>Process Data Mapping&lt;/Name>&#xA;    &lt;RuntimeModuleName>PackageCopyRuntimeModule&lt;/RuntimeModuleName>&#xA;    &lt;DesignModuleName>PackageCopyDesignModule&lt;/DesignModuleName>&#xA;    &lt;Configuration/>&#xA;    &lt;InputMsgCopyRules>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>160&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Packages/involucrado/r_object_id&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/Process Data/Packages/direccion/parent_id_uif_r_inv_direccion/uif_f_involucrado/r_object_id&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;    &lt;/InputMsgCopyRules>&#xA;    &lt;OutputMsgCopyRules/>&#xA;    &lt;CorrelationMsgCopyRules/>&#xA;    &lt;UserDefinedInputTreeNodes/>&#xA;    &lt;UserDefinedOutputTreeNodes/>&#xA;    &lt;InputSchemaConfigs/>&#xA;    &lt;OutputSchemaConfigs/>&#xA;&lt;/ServiceDefinition>&#xA;">
+      <performer>
+        <dataResolutionConfig xsi:type="nsCommon:PredefinedResolutionConfig"/>
+      </performer>
+      <methodFailure/>
+    </performerConfig>
+    <packageCharacteristics key="//@processData/@packages[name='involucrado']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+    <packageCharacteristics key="//@processData/@packages[name='direccion']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='nombre_zona']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='id_involucrado']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='pais']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_via']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='nombre_via']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_numero']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='numero_interiores']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_zona']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='distrito']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='numero_exteriores']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='provincia']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='departamento']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <eventConfigs label="Activity Completed">
+      <triggerType type="PROCESS_ACTIVITY_COMPLETED"/>
+    </eventConfigs>
+  </activities>
+  <activities name="Asignar Paquete Involucrado" activityType="BEGIN" description="" priority="Medium" taskName="" taskInstructions="" sourceFlows="//@flows[name='L1']" destFlows="//@flows[name='L3']">
+    <trigger numOfInputFlows="1" expectedEventName="" canRunMultipleTimes="true"/>
+    <transition xsi:type="nsActivity:AllFlowsTransition"/>
+    <timers/>
+    <calendar flag="Performer"/>
+    <uiinfo imageScale="100" image="activity_autoint_48x32_proc.png">
+      <topLeftPoint x="124" y="156"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </uiinfo>
+    <performerConfig xsi:type="nsActivity:SvcDefBasedOutboundPerformerConfiguration" timeout="60" serviceDefinition="&lt;?xml version=&quot;1.0&quot;?>&#xA;&lt;ServiceDefinition xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;activity.xsd&quot;>&#xA;    &lt;Name>Process Data Mapping&lt;/Name>&#xA;    &lt;RuntimeModuleName>PackageCopyRuntimeModule&lt;/RuntimeModuleName>&#xA;    &lt;DesignModuleName>PackageCopyDesignModule&lt;/DesignModuleName>&#xA;    &lt;Configuration/>&#xA;    &lt;InputMsgCopyRules>&#xA;        &lt;MappingRule>&#xA;            &lt;FunctionName>Copy&lt;/FunctionName>&#xA;            &lt;Location>&#xA;                &lt;XPosition>175&lt;/XPosition>&#xA;                &lt;YPosition>25&lt;/YPosition>&#xA;            &lt;/Location>&#xA;            &lt;From>&#xA;                &lt;Value>/Process Data/Variables/id_involucrado&lt;/Value>&#xA;            &lt;/From>&#xA;            &lt;To>/Process Data/Packages/involucrado/r_object_id&lt;/To>&#xA;            &lt;RuleType>RULE_TYPE_FOR_ALL&lt;/RuleType>&#xA;            &lt;TargetWriteOption>TARGET_WRITE_OVERWRITE&lt;/TargetWriteOption>&#xA;        &lt;/MappingRule>&#xA;    &lt;/InputMsgCopyRules>&#xA;    &lt;OutputMsgCopyRules/>&#xA;    &lt;CorrelationMsgCopyRules/>&#xA;    &lt;UserDefinedInputTreeNodes/>&#xA;    &lt;UserDefinedOutputTreeNodes/>&#xA;    &lt;InputSchemaConfigs/>&#xA;    &lt;OutputSchemaConfigs/>&#xA;&lt;/ServiceDefinition>&#xA;">
+      <performer>
+        <dataResolutionConfig xsi:type="nsCommon:PredefinedResolutionConfig"/>
+      </performer>
+      <methodFailure/>
+    </performerConfig>
+    <packageCharacteristics key="//@processData/@packages[name='involucrado']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+    <packageCharacteristics key="//@processData/@packages[name='direccion']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_via']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='departamento']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='distrito']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='numero_interiores']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='nombre_via']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='provincia']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_numero']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='pais']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='id_involucrado']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='tipo_zona']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='nombre_zona']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <variableCharacteristics key="//@processData/@variables[name='numero_exteriores']">
+      <value visible="true"/>
+    </variableCharacteristics>
+    <eventConfigs label="Activity Completed">
+      <triggerType type="PROCESS_ACTIVITY_COMPLETED"/>
+    </eventConfigs>
+  </activities>
+  <processData>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="pais" label="pais">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="departamento" label="departamento">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="provincia" label="provincia">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="distrito" label="distrito">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="tipo_via" label="tipo_via">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="nombre_via" label="nombre_via">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="tipo_zona" label="tipo_zona">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="nombre_zona" label="nombre_zona">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="tipo_numero" label="tipo_numero">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="numero_exteriores" label="numero_exteriores">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="numero_interiores" label="numero_interiores">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <variables xsi:type="nsProcess:SimpleVariable" input="true">
+      <attribute name="id_involucrado" label="id_involucrado">
+        <type xsi:type="nsAttributeDatatypes:StringType"/>
+        <defaultValue/>
+      </attribute>
+    </variables>
+    <packages name="involucrado">
+      <type xsi:type="nsDatatypes:Folder" href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#/"/>
+    </packages>
+    <packages name="direccion">
+      <type xsi:type="nsDatatypes:BusinessObject" href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+    </packages>
+    <packageCharacteristics key="//@processData/@packages[name='involucrado']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+    <packageCharacteristics key="//@processData/@packages[name='direccion']">
+      <value visible="true" mandatory="false" versionLabel="CURRENT"/>
+    </packageCharacteristics>
+  </processData>
+  <flows name="L2" from="//@activities[name='Crear%20Direccion']" to="//@activities[name='Relacionar%20Involucrado%20con%20Direccion']">
+    <uiinfo destActivityLocIndex="1">
+      <line/>
+      <labelStyle fontName="Helvetica" fontSize="10"/>
+    </uiinfo>
+  </flows>
+  <flows name="L1" from="//@activities[name='Initiate']" to="//@activities[name='Asignar%20Paquete%20Involucrado']">
+    <uiinfo destActivityLocIndex="1">
+      <line/>
+      <labelStyle fontName="Helvetica" fontSize="10"/>
+    </uiinfo>
+  </flows>
+  <flows name="L3" from="//@activities[name='Asignar%20Paquete%20Involucrado']" to="//@activities[name='Crear%20Direccion']">
+    <uiinfo destActivityLocIndex="4">
+      <line/>
+      <labelStyle fontName="Helvetica" fontSize="10"/>
+    </uiinfo>
+  </flows>
+  <defaultSettings/>
+  <processUIInfo>
+    <startActivityUIInfo imageScale="100" image="palette/event_start_32_proc.png">
+      <topLeftPoint x="50" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </startActivityUIInfo>
+    <endActivityUIInfo imageScale="100" image="palette/event_end_32_proc.png">
+      <topLeftPoint x="361" y="150"/>
+      <textStyle fontName="Dialog" fontSize="10">
+        <bgColor/>
+        <fgColor/>
+      </textStyle>
+    </endActivityUIInfo>
+    <endSequenceFlowUIInfo destActivityLocIndex="4">
+      <line/>
+      <labelStyle fontName="Helvetica" fontSize="10"/>
+    </endSequenceFlowUIInfo>
+  </processUIInfo>
+  <eventConfigs label="Workflow Started">
+    <triggerType type="PROCESS_WORKFLOW_STARTED"/>
+  </eventConfigs>
+  <eventConfigs label="Workflow changed state">
+    <triggerType type="PROCESS_WORKFLOW_CHANGESTATE"/>
+  </eventConfigs>
+  <eventConfigs label="Workflow Aborted">
+    <triggerType type="PROCESS_WORKFLOW_ABORTED"/>
+  </eventConfigs>
+  <eventConfigs label="Workflow completed">
+    <triggerType type="PROCESS_WORKFLOW_COMPLETED"/>
+  </eventConfigs>
+</nsProcess:Process>

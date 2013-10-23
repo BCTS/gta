@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionflow:ActionFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actionflow="http://www.emc.com/xcp2/2010/actionflow" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" urn="urn:uif:com.emc.xcp.artifact.actionFlow:Artifacts/Action Flows/crear_test.actionflow" categoryId="com.emc.xcp.artifact.actionFlow" name="crear_test" label="Crear Test" initialState="//@states[id='viewState_crear_test_step_1']">
+  <primaryElement>
+    <dataModel href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#/"/>
+  </primaryElement>
+  <dataActions categoryId="com.emc.xcp.artifact.dataservice.dataaction" name="da_actionflow_crear_test" label="da_actionflow_crear_test">
+    <inputMappings name="alias">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="apellido_materno">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="apellido_paterno">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="departamento_nacimiento">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="distrito_nacimiento">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="email">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="estado">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="estado_civil">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="falsos_nombres">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="fecha_defuncion">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="fecha_nacimiento">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="fullname">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="genero">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="idiomas">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="nombres">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="pais_nacimiento">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="profesion">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="provincia_nacimiento">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="tipo_persona">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="object_name">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="subject">
+      <expression/>
+    </inputMappings>
+    <inputMappings name="title">
+      <expression/>
+    </inputMappings>
+    <contract xsi:type="nsDataserviceContract:DataActionContract" href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#//@dataActionContracts[name='da_def_create_f_involucrado']"/>
+  </dataActions>
+  <states xsi:type="actionflow:EndState" id="success"/>
+  <states xsi:type="actionflow:EndState" id="error"/>
+  <states xsi:type="actionflow:ActionState" id="finish" dataAction="//@dataActions[name='da_actionflow_crear_test']">
+    <transitions on="success" to="//@states[id='success']"/>
+    <transitions on="error" to="//@states[id='error']"/>
+  </states>
+  <states xsi:type="actionflow:EndState" id="cancel"/>
+  <states xsi:type="actionflow:ViewState" id="viewState_crear_test_step_1">
+    <transitions on="cancel" to="//@states[id='cancel']"/>
+    <transitions on="finish" to="//@states[id='finish']"/>
+    <step href="urn:uif:com.emc.xcp.artifact.uistep:Artifacts/UI Steps/crear_test_step_1.uistep#/"/>
+  </states>
+</actionflow:ActionFlow>

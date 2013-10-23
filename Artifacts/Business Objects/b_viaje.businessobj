@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsDatatypes:BusinessObject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" xmlns:nsPicklist="http://xcp.emc.com/picklist" urn="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_viaje.businessobj" categoryId="com.emc.xcp.artifact.bo" name="b_viaje" label="Viaje">
+  <attributes name="pais_destino" label="pais_destino">
+    <type xsi:type="nsAttributeDatatypes:StringType" length="100"/>
+  </attributes>
+  <attributes name="anho" label="anho">
+    <type xsi:type="nsAttributeDatatypes:IntegerType"/>
+  </attributes>
+  <attributes name="cantidad" label="cantidad">
+    <type xsi:type="nsAttributeDatatypes:IntegerType"/>
+  </attributes>
+  <attributes name="tipo_movimiento" label="tipo_movimiento">
+    <type xsi:type="nsPicklist:PickListType">
+      <pickList href="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_tipo_mov_viaje.picklist#/"/>
+    </type>
+  </attributes>
+  <accessControlPolicy inheritedFromParentFolder="true"/>
+  <defaultFolderPath/>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_create_b_viaje" label="Create Viaje" implCategoryId="com.emc.xcp.artifact.bo">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="anho" label="anho">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="cantidad" label="cantidad">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="pais_destino" label="pais_destino">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="tipo_movimiento" label="tipo_movimiento">
+      <attributeType xsi:type="nsPicklist:PickListType">
+        <pickList href="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_tipo_mov_viaje.picklist#/"/>
+      </attributeType>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Create"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_update_b_viaje" label="Update Viaje" implCategoryId="com.emc.xcp.artifact.bo">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="anho" label="anho">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="cantidad" label="cantidad">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="pais_destino" label="pais_destino">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="tipo_movimiento" label="tipo_movimiento">
+      <attributeType xsi:type="nsPicklist:PickListType">
+        <pickList href="urn:uif:com.emc.xcp.artifact.picklist:Artifacts/Picklists/pl_tipo_mov_viaje.picklist#/"/>
+      </attributeType>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Update"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_delete_b_viaje" label="Delete Viaje" implCategoryId="com.emc.xcp.artifact.bo">
+    <primaryElement dataModel="/"/>
+    <actionType type="Delete"/>
+  </dataActionContracts>
+  <superType xsi:type="nsDatatypes:BusinessObject" href="urn:xcp:com.emc.xcp.artifact.bo:Artifacts/Business Objects/rootbo.businessobj#/"/>
+</nsDatatypes:BusinessObject>

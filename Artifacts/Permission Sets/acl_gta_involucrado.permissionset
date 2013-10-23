@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsPermissionSet:PermissionSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsApprole="http://xcp2.emc.com/approle" xmlns:nsPermissionSet="http://xcp.emc.com/permissionset" urn="urn:uif:com.emc.xcp.artifact.permissionset:Artifacts/Permission Sets/acl_gta_involucrado.permissionset" categoryId="com.emc.xcp.artifact.permissionset" name="acl_gta_involucrado" label="acl_gta_involucrados_dao" description="Set de permisos sobre los involucrados registrados en el sistema">
+  <permissions permissionLevel="Edit">
+    <member xsi:type="nsApprole:AppRole" href="urn:uif:com.emc.xcp.artifact.approle:Artifacts/Roles/gta_analista_dao.role#/"/>
+  </permissions>
+  <permissions permissionLevel="Edit">
+    <member xsi:type="nsApprole:AppRole" href="urn:uif:com.emc.xcp.artifact.approle:Artifacts/Roles/gta_intendente_dao.role#/"/>
+  </permissions>
+  <permissions permissionLevel="Administrate">
+    <member xsi:type="nsApprole:AppRole" href="urn:uif:com.emc.xcp.artifact.approle:Artifacts/Roles/gta_administrador_d.role#/"/>
+  </permissions>
+</nsPermissionSet:PermissionSet>

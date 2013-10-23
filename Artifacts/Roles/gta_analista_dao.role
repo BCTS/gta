@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsApprole:AppRole xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:nsApprole="http://xcp2.emc.com/approle" urn="urn:uif:com.emc.xcp.artifact.approle:Artifacts/Roles/gta_analista_dao.role" categoryId="com.emc.xcp.artifact.approle" name="gta_analista_dao" label="gta_analista_dao"/>

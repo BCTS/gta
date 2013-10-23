@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsDatatypes:Relation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" urn="urn:uif:com.emc.xcp.artifact.relation:Artifacts/Relationships/r_inv_telefono.relationship" categoryId="com.emc.xcp.artifact.relation" name="r_inv_telefono" label="Involucrado-Telefono" targetRoleName="telefonos" targetRoleLabel="telefonos" fromCardinality="1" subjectRoleName="involucrado" subjectRoleLabel="Involucrado" toCardinality="-1" bidirectional="true">
+  <from xsi:type="nsDatatypes:Folder" href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#/"/>
+  <to xsi:type="nsDatatypes:BusinessObject" href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_telefono.businessobj#/"/>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_relate_r_inv_telefono_f_involucrado" label="Relate Involucrado-Telefono Involucrado" implCategoryId="com.emc.xcp.artifact.relation">
+    <primaryElement dataModel="/"/>
+    <actionType xsi:type="nsDataserviceContract:RelateActionType" type="Relate">
+      <target href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#/"/>
+    </actionType>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_relate_r_inv_telefono_b_telefono" label="Relate Involucrado-Telefono Telefono" implCategoryId="com.emc.xcp.artifact.relation">
+    <primaryElement dataModel="/"/>
+    <actionType xsi:type="nsDataserviceContract:RelateActionType" type="Relate">
+      <target href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_telefono.businessobj#/"/>
+    </actionType>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_update_r_inv_telefono" label="Update Involucrado-Telefono" implCategoryId="com.emc.xcp.artifact.relation">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Update"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_delete_r_inv_telefono" label="Delete Involucrado-Telefono" implCategoryId="com.emc.xcp.artifact.relation">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Delete"/>
+  </dataActionContracts>
+</nsDatatypes:Relation>

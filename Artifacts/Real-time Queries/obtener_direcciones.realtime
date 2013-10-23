@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<realtime:RealTimeSearch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" xmlns:realtime="http://xcp.emc.com/search/realtime" urn="urn:uif:com.emc.xcp.artifact.search.realtime:Artifacts/Real-time Queries/obtener_direcciones.realtime" categoryId="com.emc.xcp.artifact.search.realtime" name="obtener_direcciones" label="Obtener Direcciones por Involucrado">
+  <datasource categoryId="com.emc.xcp.artifact.dataservice.datasourcecontract" name="obtener_direcciones" label="Obtener Direcciones por Involucrado" implCategoryId="com.emc.xcp.artifact.search.realtime">
+    <inputs xsi:type="nsDataserviceContract:IdElement" name="input_object_id" label="Object ID">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <outputs xsi:type="nsDataserviceContract:AttributeElement" name="Result Count">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </outputs>
+    <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+      <item xsi:type="nsDataserviceContract:StructureElement" name="Items">
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="pais" label="País" sortable="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="departamento" label="Departamento">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="provincia" label="Provincia">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="distrito" label="Distrito">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="tipo_zona" label="Tipo_zona">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="nombre_zona" label="Nombre Zona">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="tipo_via" label="Tipo Vía">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="nombre_via" label="Vía">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="tipo_numero" label="Tipo Número">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="numero_exteriores" label="Nro. Exteriores">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="numero_interiores" label="Nro. Interiores">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="id" label="Object ID" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="r_object_type" label="Object type" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+      </item>
+    </outputs>
+    <primaryElement>
+      <dataModel href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+    </primaryElement>
+  </datasource>
+  <inputParameters label="Object ID" name="object_id">
+    <formInputs xsi:type="realtime:RealTimeStringFormInput" operator="com.emc.xcp.model.common.StringOperator:EQUAL">
+      <contextSelection>
+        <parentRef>
+          <parentRef selectionName="involucrado" selectionLabel="Involucrado" useNamePreferred="true">
+            <parentRef>
+              <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+            </parentRef>
+            <dataRef href="urn:uif:com.emc.xcp.artifact.relation:Artifacts/Relationships/r_inv_direccion.relationship#/"/>
+          </parentRef>
+          <dataRef href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#/"/>
+        </parentRef>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='r_object_id']"/>
+      </contextSelection>
+    </formInputs>
+  </inputParameters>
+  <columns label="País" sortable="true">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='pais']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Departamento">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='departamento']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Provincia">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='provincia']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Distrito">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='distrito']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Tipo_zona">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='tipo_zona']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Nombre Zona">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='nombre_zona']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Tipo Vía">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='tipo_via']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Vía">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='nombre_via']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Tipo Número">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='tipo_numero']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Nro. Exteriores">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='numero_exteriores']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Nro. Interiores">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='numero_interiores']"/>
+    </contextSelection>
+  </columns>
+  <defaultSort ascending="true">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#//@attributes[name='pais']"/>
+    </contextSelection>
+  </defaultSort>
+  <dataType xsi:type="nsDatatypes:BusinessObject" href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+  <resultOrientation>
+    <dataRef href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_direccion.businessobj#/"/>
+  </resultOrientation>
+</realtime:RealTimeSearch>

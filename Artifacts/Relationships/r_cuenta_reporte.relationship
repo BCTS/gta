@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsDatatypes:Relation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" urn="urn:uif:com.emc.xcp.artifact.relation:Artifacts/Relationships/r_cuenta_reporte.relationship" categoryId="com.emc.xcp.artifact.relation" name="r_cuenta_reporte" label="CuentaBancaria-ReporteCuentaROS" targetRoleName="reporte_cuenta_ros" targetRoleLabel="reporte_cuenta_ros" fromCardinality="1" subjectRoleName="cuentabancaria" subjectRoleLabel="CuentaBancaria" toCardinality="-1" bidirectional="true">
+  <from xsi:type="nsDatatypes:BusinessObject" href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_cuenta_bancaria.businessobj#/"/>
+  <to xsi:type="nsDatatypes:BusinessObject" href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_reportecuenta_ros.businessobj#/"/>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_relate_r_cuenta_reporte_b_cuenta_bancaria" label="Relate CuentaBancaria-ReporteCuentaROS CuentaBancaria" implCategoryId="com.emc.xcp.artifact.relation">
+    <primaryElement dataModel="/"/>
+    <actionType xsi:type="nsDataserviceContract:RelateActionType" type="Relate">
+      <target href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_cuenta_bancaria.businessobj#/"/>
+    </actionType>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_relate_r_cuenta_reporte_b_reportecuenta_ros" label="Relate CuentaBancaria-ReporteCuentaROS ReporteCuentaROS" implCategoryId="com.emc.xcp.artifact.relation">
+    <primaryElement dataModel="/"/>
+    <actionType xsi:type="nsDataserviceContract:RelateActionType" type="Relate">
+      <target href="urn:uif:com.emc.xcp.artifact.bo:Artifacts/Business Objects/b_reportecuenta_ros.businessobj#/"/>
+    </actionType>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_update_r_cuenta_reporte" label="Update CuentaBancaria-ReporteCuentaROS" implCategoryId="com.emc.xcp.artifact.relation">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Update"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_delete_r_cuenta_reporte" label="Delete CuentaBancaria-ReporteCuentaROS" implCategoryId="com.emc.xcp.artifact.relation">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Delete"/>
+  </dataActionContracts>
+</nsDatatypes:Relation>

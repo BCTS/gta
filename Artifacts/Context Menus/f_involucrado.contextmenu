@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contextmenu:ContextMenu xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:contextmenu="http://www.emc.com/xcp2/2010/contextmenu" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" urn="urn:uif:com.emc.xcp.artifact.contextmenu:Artifacts/Context Menus/f_involucrado.contextmenu" categoryId="com.emc.xcp.artifact.contextmenu" name="f_involucrado" label="Context Menu">
+  <primaryModel href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#/"/>
+  <items xsi:type="contextmenu:GotoPageItem" label="Agregar Dirección">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_gotopage"/>
+    <actionProperties name="default_link" value="false" type="BOOLEAN"/>
+    <page href="urn:uif:com.emc.xcp.artifact.page:Artifacts/Pages/agregar_direcci_n.page#/"/>
+  </items>
+  <items xsi:type="contextmenu:GotoPageItem" label="Editar Involucrado">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_gotopage"/>
+    <actionProperties name="default_link" value="false" type="BOOLEAN"/>
+    <page href="urn:uif:com.emc.xcp.artifact.page:Artifacts/Pages/editar_involucrado.page#/"/>
+  </items>
+  <items xsi:type="contextmenu:GotoPageItem" label="Involucrado">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_gotopage"/>
+    <actionProperties name="default_link" value="false" type="BOOLEAN"/>
+    <page href="urn:uif:com.emc.xcp.artifact.page:Artifacts/Pages/involucrado.page#/"/>
+  </items>
+  <items xsi:type="contextmenu:GotoPageItem" label="Nuevo Involucrado">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_gotopage"/>
+    <actionProperties name="default_link" value="false" type="BOOLEAN"/>
+    <page href="urn:uif:com.emc.xcp.artifact.page:Artifacts/Pages/nuevo_involucrado.page#/"/>
+  </items>
+  <items xsi:type="contextmenu:GotoPageItem" label="Ver Involucrado">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_gotopage"/>
+    <actionProperties name="default_link" value="false" type="BOOLEAN"/>
+    <page href="urn:uif:com.emc.xcp.artifact.page:Artifacts/Pages/ver_involucrado.page#/"/>
+  </items>
+  <items xsi:type="contextmenu:SeperatorItem"/>
+  <items xsi:type="contextmenu:DataActionItem" label="Delete">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="delete"/>
+    <actionProperties name="showConfirmation" value="true" type="BOOLEAN"/>
+    <actionProperties name="showSuccess" value="true" type="BOOLEAN"/>
+    <actionProperties name="redirect_style" value="current"/>
+    <dataAction>
+      <contract xsi:type="nsDataserviceContract:DataActionContract" href="urn:uif:com.emc.xcp.artifact.folder:Artifacts/Folders/f_involucrado.folder#//@dataActionContracts[name='da_def_delete_f_involucrado']"/>
+    </dataAction>
+  </items>
+</contextmenu:ContextMenu>
