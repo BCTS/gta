@@ -1,0 +1,187 @@
+{
+  "padding" : "10 10 5 10",
+  "border" : false,
+  "xtype" : "xcp_form",
+  "models" : [ "uif_f_involucrado_crear_test_model" ],
+  "loadModel" : false,
+  "items" : [ {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "width" : "100%",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "alias",
+        "xtype" : "xcp_multivalue_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_alias_fieldLabel}",
+        "height" : 150,
+        "valueType" : "STRING",
+        "isRepeating" : true,
+        "name" : "alias"
+      }, {
+        "xcpId" : "apellido_materno",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_apellido_materno_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "apellido_materno"
+      }, {
+        "xcpId" : "apellido_paterno",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_apellido_paterno_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "apellido_paterno"
+      }, {
+        "xcpId" : "departamento_nacimiento",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_departamento_nacimiento_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "departamento_nacimiento"
+      }, {
+        "xcpId" : "distrito_nacimiento",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_distrito_nacimiento_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "distrito_nacimiento"
+      }, {
+        "xcpId" : "email",
+        "xtype" : "xcp_multivalue_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_email_fieldLabel}",
+        "height" : 150,
+        "valueType" : "STRING",
+        "isRepeating" : true,
+        "name" : "email"
+      }, {
+        "xcpId" : "estado",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_estado_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "estado"
+      }, {
+        "xcpId" : "estado_civil",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_estado_civil_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_estado_civil",
+        "valueType" : "STRING",
+        "name" : "estado_civil"
+      }, {
+        "xcpId" : "falsos_nombres",
+        "xtype" : "xcp_multivalue_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_falsos_nombres_fieldLabel}",
+        "height" : 150,
+        "valueType" : "STRING",
+        "isRepeating" : true,
+        "name" : "falsos_nombres"
+      }, {
+        "xcpId" : "fecha_defuncion",
+        "xtype" : "xcp_date_time_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_fecha_defuncion_fieldLabel}",
+        "hstretch" : true,
+        "format" : {
+          "xtype" : "xcp_datetime_formatter",
+          "dateFormat" : "short",
+          "timeFormat" : "short",
+          "dateStyle" : "datetime"
+        },
+        "valueType" : "DATETIME",
+        "name" : "fecha_defuncion"
+      }, {
+        "xcpId" : "fecha_nacimiento",
+        "xtype" : "xcp_date_time_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_fecha_nacimiento_fieldLabel}",
+        "hstretch" : true,
+        "format" : {
+          "xtype" : "xcp_datetime_formatter",
+          "dateFormat" : "short",
+          "timeFormat" : "short",
+          "dateStyle" : "datetime"
+        },
+        "valueType" : "DATETIME",
+        "name" : "fecha_nacimiento"
+      }, {
+        "xcpId" : "fullname",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_fullname_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "fullname"
+      }, {
+        "xcpId" : "genero",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_genero_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_genero",
+        "valueType" : "STRING",
+        "name" : "genero"
+      }, {
+        "xcpId" : "idiomas",
+        "xtype" : "xcp_multivalue_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_idiomas_fieldLabel}",
+        "height" : 150,
+        "valueType" : "STRING",
+        "isRepeating" : true,
+        "name" : "idiomas"
+      }, {
+        "xcpId" : "nombres",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_nombres_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "nombres"
+      }, {
+        "xcpId" : "pais_nacimiento",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_pais_nacimiento_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "pais_nacimiento"
+      }, {
+        "xcpId" : "profesion",
+        "xtype" : "xcp_multivalue_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_profesion_fieldLabel}",
+        "height" : 150,
+        "valueType" : "STRING",
+        "isRepeating" : true,
+        "name" : "profesion"
+      }, {
+        "xcpId" : "provincia_nacimiento",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_provincia_nacimiento_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "provincia_nacimiento"
+      }, {
+        "xcpId" : "tipo_persona",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_tipo_persona_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_tipo_persona",
+        "valueType" : "STRING",
+        "name" : "tipo_persona"
+      }, {
+        "xcpId" : "object_name",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_UIStep_uif_crear_test_step_1_object_name_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "object_name"
+      } ]
+    } ]
+  } ]
+}

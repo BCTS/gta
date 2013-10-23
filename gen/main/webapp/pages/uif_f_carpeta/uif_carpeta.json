@@ -1,0 +1,7 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "${_UI_Page_uif_carpeta_title}",
+  "xtype" : "xcp_form",
+  "models" : [ "uif_f_carpeta" ]
+}

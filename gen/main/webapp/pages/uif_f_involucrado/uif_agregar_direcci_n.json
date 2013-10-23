@@ -1,0 +1,245 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "${_UI_Page_uif_agregar_direcci_n_title}",
+  "xtype" : "xcp_form",
+  "modelImmutable" : true,
+  "models" : [ "uif_f_involucrado" ],
+  "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ {
+      "xcpId" : "da_def_invoke_stateless_processcrear_direccion_en__initiate_button",
+      "redirectStyle" : "specified",
+      "actionType" : "create",
+      "autoLoad" : "true",
+      "pageSize" : "10",
+      "outputType" : "Array",
+      "showConfirmation" : true,
+      "showSuccessNotification" : true,
+      "redirectUrl" : "uif_editar_involucrado",
+      "redirectUrlModel" : "uif_f_involucrado",
+      "actionModel" : "uif_da_def_invoke_stateless_processcrear_direccion_en__initiate",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "departamento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_departamento_1",
+          "events" : ["departamento.change" ]
+        }, {
+          "propertyId" : "distrito",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_distrito_1",
+          "events" : ["distrito.change" ]
+        }, {
+          "propertyId" : "id_involucrado",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_id_involucrado_1",
+          "events" : ["uif_f_involucrado.change","uif_f_involucrado.load" ]
+        }, {
+          "propertyId" : "nombre_via",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_nombre_via_1",
+          "events" : ["nombre_via.change" ]
+        }, {
+          "propertyId" : "nombre_zona",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_nombre_zona_1",
+          "events" : ["nombre_zona.change" ]
+        }, {
+          "propertyId" : "numero_exteriores",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_numero_exteriores_1",
+          "events" : ["numero_exteriores.change" ]
+        }, {
+          "propertyId" : "numero_interiores",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_numero_interiores_1",
+          "events" : ["numero_interiores.change" ]
+        }, {
+          "propertyId" : "pais",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_pais_1",
+          "events" : ["pais.change" ]
+        }, {
+          "propertyId" : "provincia",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_provincia_1",
+          "events" : ["provincia.change" ]
+        }, {
+          "propertyId" : "tipo_numero",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_tipo_numero_1",
+          "events" : ["tipo_numero.change" ]
+        }, {
+          "propertyId" : "tipo_via",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_tipo_via_1",
+          "events" : ["tipo_via.change" ]
+        }, {
+          "propertyId" : "tipo_zona",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_direcci_n_da_def_invoke_stateless_processcrear_direccion_en__initiate_tipo_zona_1",
+          "events" : ["tipo_zona.change" ]
+        } ],
+        "mapping" : {
+          "departamento" : ["departamento" ],
+          "distrito" : ["distrito" ],
+          "nombre_via" : ["nombre_via" ],
+          "nombre_zona" : ["nombre_zona" ],
+          "numero_exteriores" : ["numero_exteriores" ],
+          "numero_interiores" : ["numero_interiores" ],
+          "pais" : ["pais" ],
+          "provincia" : ["provincia" ],
+          "tipo_numero" : ["tipo_numero" ],
+          "tipo_via" : ["tipo_via" ],
+          "tipo_zona" : ["tipo_zona" ]
+        }
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "title" : "${_UI_Page_uif_agregar_direcci_n_column_box_title}",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "pais",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_pais_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_tipo_numero_dire",
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "departamento",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_departamento_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_profesiones",
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "provincia",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_provincia_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_tipo_numero_dire",
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "distrito",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_distrito_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_tipo_numero_dire",
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "tipo_zona",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_tipo_zona_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_tipo_zona",
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "nombre_zona",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_nombre_zona_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "tipo_via",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_tipo_via_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_tipo_via",
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "nombre_via",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_nombre_via_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "tipo_numero",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_tipo_numero_fieldLabel}",
+        "store" : "xcp.picklist.uif_pl_tipo_numero_dire",
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "numero_exteriores",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_numero_exteriores_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "numero_interiores",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_Page_uif_agregar_direcci_n_numero_interiores_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING"
+      } ]
+    }, {
+      "xcpId" : "columnvbox1",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5"
+    } ]
+  }, {
+    "xcpId" : "column_box1",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox2",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "right",
+      "valign" : "top",
+      "items" : [ {
+        "xcpId" : "button",
+        "xtype" : "xcp_button",
+        "text" : "${_UI_Page_uif_agregar_direcci_n_button_text}",
+        "actionInstanceId" : "da_def_invoke_stateless_processcrear_direccion_en__initiate_button"
+      }, {
+        "xcpId" : "button1",
+        "xtype" : "xcp_button",
+        "text" : "${_UI_Page_uif_agregar_direcci_n_button1_text}",
+        "action" : {
+          "redirectStyle" : "specified",
+          "actionType" : "xcp_gotopage",
+          "redirectUrl" : "uif_editar_involucrado",
+          "redirectUrlModel" : "uif_f_involucrado"
+        }
+      } ]
+    }, {
+      "xcpId" : "columnvbox3",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5"
+    } ]
+  } ]
+}

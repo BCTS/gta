@@ -1,0 +1,8 @@
+{
+"uif":{
+"ruta_involucrados":{
+"label": "${_UI_AppParameteruif_ruta_involucrados_label}",
+"description": "${_UI_AppParameteruif_ruta_involucrados_description}"
+}
+}
+}

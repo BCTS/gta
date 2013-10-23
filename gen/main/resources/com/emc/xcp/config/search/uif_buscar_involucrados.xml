@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean class="com.emc.xcp.services.datasource.domain.SearchQuery" id="uif_buscar_involucrados">
+  <property name="columns">
+    <list>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="id"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="fullname"/>
+        <property name="sortable" value="true"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="tipo_persona"/>
+        <property name="sortable" value="true"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="fecha_nacimiento"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="r_creation_date"/>
+        <property name="sortable" value="true"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="r_object_type"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="summary"/>
+        <property name="sortable" value="false"/>
+      </bean>
+    </list>
+  </property>
+  <property name="expressionSet">
+    <bean class="com.emc.xcp.services.datasource.domain.expression.ExpressionSet">
+      <property name="expressions">
+        <list>
+          <bean class="com.emc.xcp.services.datasource.domain.expression.SimpleValueExpression">
+            <property name="caseSensitive" value="true"/>
+            <property name="exactMatch" value="false"/>
+            <property name="fuzzy" value="false"/>
+            <property name="property" value="tipo_persona"/>
+            <property name="repeated" value="false"/>
+            <property name="value" value="urlparam{input_tipo_persona}"/>
+            <property name="dataType" value="STRING"/>
+            <property name="operator" value="EQUAL"/>
+          </bean>
+          <bean class="com.emc.xcp.services.datasource.domain.expression.SimpleValueExpression">
+            <property name="caseSensitive" value="true"/>
+            <property name="exactMatch" value="false"/>
+            <property name="fuzzy" value="true"/>
+            <property name="property" value="fullname"/>
+            <property name="repeated" value="false"/>
+            <property name="value" value="urlparam{input_fullname}"/>
+            <property name="dataType" value="STRING"/>
+            <property name="operator" value="CONTAINS"/>
+          </bean>
+          <bean class="com.emc.xcp.services.datasource.domain.expression.SimpleValueExpression">
+            <property name="caseSensitive" value="true"/>
+            <property name="exactMatch" value="false"/>
+            <property name="fuzzy" value="false"/>
+            <property name="property" value="estado"/>
+            <property name="repeated" value="false"/>
+            <property name="value" value="'A'"/>
+            <property name="dataType" value="STRING"/>
+            <property name="operator" value="EQUAL"/>
+          </bean>
+          <bean class="com.emc.xcp.services.datasource.domain.expression.FullTextExpression">
+            <property name="caseSensitive" value="false"/>
+            <property name="fuzzy" value="false"/>
+            <property name="repeated" value="false"/>
+            <property name="value" value="urlparam{q}"/>
+          </bean>
+        </list>
+      </property>
+      <property name="operator" value="AND"/>
+    </bean>
+  </property>
+  <property name="facets">
+    <list>
+      <bean class="com.emc.xcp.services.datasource.domain.Facet">
+        <property name="id" value="facet_profesion"/>
+        <property name="property" value="profesion"/>
+        <property name="sort" value="FREQUENCY"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Facet">
+        <property name="id" value="facet_pais_nacimiento"/>
+        <property name="property" value="pais_nacimiento"/>
+        <property name="sort" value="FREQUENCY"/>
+      </bean>
+    </list>
+  </property>
+  <property name="mapping" ref="uif_buscar_involucradosmapping"/>
+  <property name="sorts">
+    <list>
+      <bean class="com.emc.xcp.services.datasource.domain.Sort">
+        <property name="ascending" value="true"/>
+        <property name="property" value="fullname"/>
+      </bean>
+    </list>
+  </property>
+</bean>
+
+<bean class="com.emc.xcp.services.datasource.domain.mapping.RealTimeMapping" id="uif_buscar_involucradosmapping">
+  <property name="rootType">
+    <bean class="com.emc.xcp.services.datasource.domain.mapping.ObjectType">
+      <property name="typeName" value="uif_f_involucrado"/>
+      <property name="attributes">
+        <map>
+          <entry key="estado">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="estado"/>
+            </bean>
+          </entry>
+          <entry key="fecha_nacimiento">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="fecha_nacimiento"/>
+            </bean>
+          </entry>
+          <entry key="fullname">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="fullname"/>
+            </bean>
+          </entry>
+          <entry key="id">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="r_object_id"/>
+            </bean>
+          </entry>
+          <entry key="pais_nacimiento">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="pais_nacimiento"/>
+            </bean>
+          </entry>
+          <entry key="profesion">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="profesion"/>
+            </bean>
+          </entry>
+          <entry key="r_creation_date">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="r_creation_date"/>
+            </bean>
+          </entry>
+          <entry key="r_object_type">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="r_object_type"/>
+            </bean>
+          </entry>
+          <entry key="tipo_persona">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="tipo_persona"/>
+            </bean>
+          </entry>
+        </map>
+      </property>
+    </bean>
+  </property>
+</bean>
+
+</beans>

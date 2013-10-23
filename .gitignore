@@ -216,7 +216,6 @@ pip-log.txt
 ## xCP
 #############
 configuration/
-gen/
 META-INF/
 target/
 .index

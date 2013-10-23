@@ -1,0 +1,334 @@
+{
+"_xcpMemberTypes":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "user",
+"label": "${_UI_PickList__xcpMemberTypes_user}"
+},
+{
+"value": "group",
+"label": "${_UI_PickList__xcpMemberTypes_group}"
+}]
+},
+"uif_pl_estado_identific":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "ACTIVO",
+"label": "${_UI_PickList_uif_pl_estado_identific_ACTIVO}"
+},
+{
+"value": "INACTIVO",
+"label": "${_UI_PickList_uif_pl_estado_identific_INACTIVO}"
+}]
+},
+"xcp_taskstatuspiclkist":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "dormant",
+"label": "${_UI_PickList_xcp_taskstatuspiclkist_dormant}"
+},
+{
+"value": "acquired",
+"label": "${_UI_PickList_xcp_taskstatuspiclkist_acquired}"
+},
+{
+"value": "ready",
+"label": "${_UI_PickList_xcp_taskstatuspiclkist_ready}"
+},
+{
+"value": "paused",
+"label": "${_UI_PickList_xcp_taskstatuspiclkist_paused}"
+}]
+},
+"uif_pl_tipo_numero_dire":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "Cuadra",
+"label": "${_UI_PickList_uif_pl_tipo_numero_dire_Cuadra}"
+},
+{
+"value": "Kilometro",
+"label": "${_UI_PickList_uif_pl_tipo_numero_dire_Kilometro}"
+},
+{
+"value": "Manzana",
+"label": "${_UI_PickList_uif_pl_tipo_numero_dire_Manzana}"
+},
+{
+"value": "Número",
+"label": "${_UI_PickList_uif_pl_tipo_numero_dire_Número}"
+},
+{
+"value": "Otro",
+"label": "${_UI_PickList_uif_pl_tipo_numero_dire_Otro}"
+}]
+},
+"uif_pl_genero":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "MASCULINO",
+"label": "${_UI_PickList_uif_pl_genero_MASCULINO}"
+},
+{
+"value": "FEMENINO",
+"label": "${_UI_PickList_uif_pl_genero_FEMENINO}"
+},
+{
+"value": "NO INDICA",
+"label": "${_UI_PickList_uif_pl_genero_NO_INDICA}"
+}]
+},
+"uif_pl_tipo_mov_viaje":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "ENTRADA",
+"label": "${_UI_PickList_uif_pl_tipo_mov_viaje_ENTRADA}"
+},
+{
+"value": "SALIDA",
+"label": "${_UI_PickList_uif_pl_tipo_mov_viaje_SALIDA}"
+}]
+},
+"xcp_wq_view_filter":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "SHOW_ALL_TASKS",
+"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_ALL_TASKS}"
+},
+{
+"value": "SHOW_PROCESSOR_ELIGIBLE_AND_OWNED_TASKS",
+"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_PROCESSOR_ELIGIBLE_AND_OWNED_TASKS}"
+},
+{
+"value": "SHOW_UNASSIGNED_TASKS",
+"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_UNASSIGNED_TASKS}"
+},
+{
+"value": "SHOW_PROCESSOR_ELIGIBLE_TASKS",
+"label": "${_UI_PickList_xcp_wq_view_filter_SHOW_PROCESSOR_ELIGIBLE_TASKS}"
+}]
+},
+"xcp_taskwqflagpicklist":{
+"model": "xcp.picklist.models.IntegerModel",
+"data": [{
+"value": 1,
+"label": "${_UI_PickList_xcp_taskwqflagpicklist_1}"
+},
+{
+"value": 0,
+"label": "${_UI_PickList_xcp_taskwqflagpicklist_0}"
+}]
+},
+"uif_pl_tipo_poder":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "RECIBIDO",
+"label": "${_UI_PickList_uif_pl_tipo_poder_RECIBIDO}"
+},
+{
+"value": "OTORGADO",
+"label": "${_UI_PickList_uif_pl_tipo_poder_OTORGADO}"
+}]
+},
+"uif_pl_estado_civil":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "SOLTERO",
+"label": "${_UI_PickList_uif_pl_estado_civil_SOLTERO}"
+},
+{
+"value": "CASADO",
+"label": "${_UI_PickList_uif_pl_estado_civil_CASADO}"
+},
+{
+"value": "VIUDO",
+"label": "${_UI_PickList_uif_pl_estado_civil_VIUDO}"
+},
+{
+"value": "DIVORCIADO",
+"label": "${_UI_PickList_uif_pl_estado_civil_DIVORCIADO}"
+},
+{
+"value": "NO INDICA",
+"label": "${_UI_PickList_uif_pl_estado_civil_NO_INDICA}"
+}]
+},
+"uif_pl_tipo_via":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "Alameda",
+"label": "${_UI_PickList_uif_pl_tipo_via_Alameda}"
+},
+{
+"value": "Avenida",
+"label": "${_UI_PickList_uif_pl_tipo_via_Avenida}"
+},
+{
+"value": "Block",
+"label": "${_UI_PickList_uif_pl_tipo_via_Block}"
+},
+{
+"value": "Calle",
+"label": "${_UI_PickList_uif_pl_tipo_via_Calle}"
+},
+{
+"value": "Carretera",
+"label": "${_UI_PickList_uif_pl_tipo_via_Carretera}"
+},
+{
+"value": "Jiron",
+"label": "${_UI_PickList_uif_pl_tipo_via_Jiron}"
+},
+{
+"value": "Malecon",
+"label": "${_UI_PickList_uif_pl_tipo_via_Malecon}"
+},
+{
+"value": "Otro",
+"label": "${_UI_PickList_uif_pl_tipo_via_Otro}"
+},
+{
+"value": "Ovalo",
+"label": "${_UI_PickList_uif_pl_tipo_via_Ovalo}"
+},
+{
+"value": "Parque",
+"label": "${_UI_PickList_uif_pl_tipo_via_Parque}"
+},
+{
+"value": "Pasaje",
+"label": "${_UI_PickList_uif_pl_tipo_via_Pasaje}"
+},
+{
+"value": "Plaza",
+"label": "${_UI_PickList_uif_pl_tipo_via_Plaza}"
+}]
+},
+"uif_pl_vericidad_inform":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "NO VERIFICADO",
+"label": "${_UI_PickList_uif_pl_vericidad_inform_NO_VERIFICADO}"
+},
+{
+"value": "VERDADERO",
+"label": "${_UI_PickList_uif_pl_vericidad_inform_VERDADERO}"
+},
+{
+"value": "FALSO",
+"label": "${_UI_PickList_uif_pl_vericidad_inform_FALSO}"
+}]
+},
+"uif_pl_profesiones":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "ABOGADO",
+"label": "${_UI_PickList_uif_pl_profesiones_ABOGADO}"
+},
+{
+"value": "CARPINTERO",
+"label": "${_UI_PickList_uif_pl_profesiones_CARPINTERO}"
+},
+{
+"value": "CONSULTOR",
+"label": "${_UI_PickList_uif_pl_profesiones_CONSULTOR}"
+}]
+},
+"uif_pl_tipo_persona":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "NATURAL",
+"label": "${_UI_PickList_uif_pl_tipo_persona_NATURAL}"
+},
+{
+"value": "JURIDICA",
+"label": "${_UI_PickList_uif_pl_tipo_persona_JURIDICA}"
+}]
+},
+"xcp_task_state":{
+"model": "xcp.picklist.models.IntegerModel",
+"data": [{
+"value": 0,
+"label": "${_UI_PickList_xcp_task_state_0}"
+},
+{
+"value": 1,
+"label": "${_UI_PickList_xcp_task_state_1}"
+},
+{
+"value": 2,
+"label": "${_UI_PickList_xcp_task_state_2}"
+},
+{
+"value": 3,
+"label": "${_UI_PickList_xcp_task_state_3}"
+},
+{
+"value": 4,
+"label": "${_UI_PickList_xcp_task_state_4}"
+},
+{
+"value": 5,
+"label": "${_UI_PickList_xcp_task_state_5}"
+},
+{
+"value": 6,
+"label": "${_UI_PickList_xcp_task_state_6}"
+},
+{
+"value": 7,
+"label": "${_UI_PickList_xcp_task_state_7}"
+}]
+},
+"uif_pl_tipo_zona":{
+"model": "xcp.picklist.models.StringModel",
+"data": [{
+"value": "Asentamiento Humano",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Asentamiento_Humano}"
+},
+{
+"value": "Caserío",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Caserío}"
+},
+{
+"value": "Conjunto Habitacional",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Conjunto_Habitacional}"
+},
+{
+"value": "Cooperativa",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Cooperativa}"
+},
+{
+"value": "Fundo",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Fundo}"
+},
+{
+"value": "Grupo",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Grupo}"
+},
+{
+"value": "Pueblo Joven",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Pueblo_Joven}"
+},
+{
+"value": "Residencial",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Residencial}"
+},
+{
+"value": "Unidad Vecinal",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Unidad_Vecinal}"
+},
+{
+"value": "Urbanización",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Urbanización}"
+},
+{
+"value": "Zona Industrial",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Zona_Industrial}"
+},
+{
+"value": "Otro",
+"label": "${_UI_PickList_uif_pl_tipo_zona_Otro}"
+}]
+}
+}

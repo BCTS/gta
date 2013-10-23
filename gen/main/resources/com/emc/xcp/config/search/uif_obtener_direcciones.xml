@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean class="com.emc.xcp.services.datasource.domain.RealTimeQuery" id="uif_obtener_direcciones">
+  <property name="columns">
+    <list>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="pais"/>
+        <property name="sortable" value="true"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="departamento"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="provincia"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="distrito"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="tipo_zona"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="nombre_zona"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="tipo_via"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="nombre_via"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="tipo_numero"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="numero_exteriores"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="numero_interiores"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="id"/>
+        <property name="sortable" value="false"/>
+      </bean>
+      <bean class="com.emc.xcp.services.datasource.domain.Column">
+        <property name="property" value="r_object_type"/>
+        <property name="sortable" value="false"/>
+      </bean>
+    </list>
+  </property>
+  <property name="expressionSet">
+    <bean class="com.emc.xcp.services.datasource.domain.expression.ExpressionSet">
+      <property name="expressions">
+        <list>
+          <bean class="com.emc.xcp.services.datasource.domain.expression.SimpleValueExpression">
+            <property name="caseSensitive" value="true"/>
+            <property name="exactMatch" value="false"/>
+            <property name="fuzzy" value="false"/>
+            <property name="property" value="involucrado.child_f_involucrado.id"/>
+            <property name="repeated" value="false"/>
+            <property name="value" value="urlparam{input_object_id}"/>
+            <property name="dataType" value="STRING"/>
+            <property name="operator" value="EQUAL"/>
+          </bean>
+        </list>
+      </property>
+      <property name="operator" value="AND"/>
+    </bean>
+  </property>
+  <property name="mapping" ref="uif_obtener_direccionesmapping"/>
+  <property name="sorts">
+    <list>
+      <bean class="com.emc.xcp.services.datasource.domain.Sort">
+        <property name="ascending" value="true"/>
+        <property name="property" value="pais"/>
+      </bean>
+    </list>
+  </property>
+</bean>
+
+<bean class="com.emc.xcp.services.datasource.domain.mapping.RealTimeMapping" id="uif_obtener_direccionesmapping">
+  <property name="rootType">
+    <bean class="com.emc.xcp.services.datasource.domain.mapping.ObjectType">
+      <property name="typeName" value="uif_b_direccion"/>
+      <property name="attributes">
+        <map>
+          <entry key="departamento">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="departamento"/>
+            </bean>
+          </entry>
+          <entry key="distrito">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="distrito"/>
+            </bean>
+          </entry>
+          <entry key="id">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="r_object_id"/>
+            </bean>
+          </entry>
+          <entry key="nombre_via">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="nombre_via"/>
+            </bean>
+          </entry>
+          <entry key="nombre_zona">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="nombre_zona"/>
+            </bean>
+          </entry>
+          <entry key="numero_exteriores">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="numero_exteriores"/>
+            </bean>
+          </entry>
+          <entry key="numero_interiores">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="numero_interiores"/>
+            </bean>
+          </entry>
+          <entry key="pais">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="pais"/>
+            </bean>
+          </entry>
+          <entry key="provincia">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="provincia"/>
+            </bean>
+          </entry>
+          <entry key="r_object_type">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="r_object_type"/>
+            </bean>
+          </entry>
+          <entry key="tipo_numero">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="tipo_numero"/>
+            </bean>
+          </entry>
+          <entry key="tipo_via">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="tipo_via"/>
+            </bean>
+          </entry>
+          <entry key="tipo_zona">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+              <property name="persistentName" value="tipo_zona"/>
+            </bean>
+          </entry>
+        </map>
+      </property>
+      <property name="relations">
+        <map>
+          <entry key="involucrado">
+            <bean class="com.emc.xcp.services.datasource.domain.mapping.Join">
+              <property name="joinQualification">
+                <list>
+                  <bean class="com.emc.xcp.services.datasource.domain.mapping.JoinQualification">
+                    <property name="sourceAttribute" value="r_object_id"/>
+                    <property name="targetAttribute" value="child_id"/>
+                  </bean>
+                </list>
+              </property>
+              <property name="relateTo">
+                <bean class="com.emc.xcp.services.datasource.domain.mapping.ObjectType">
+                  <property name="typeName" value="dm_relation"/>
+                  <property name="constraintQualification">
+                    <list>
+                      <bean class="com.emc.xcp.services.datasource.domain.mapping.ConstraintQualification">
+                        <property name="sourceAttribute" value="relation_name"/>
+                        <property name="value" value="uif_r_inv_direccion"/>
+                      </bean>
+                    </list>
+                  </property>
+                  <property name="relations">
+                    <map>
+                      <entry key="child_f_involucrado">
+                        <bean class="com.emc.xcp.services.datasource.domain.mapping.Join">
+                          <property name="joinQualification">
+                            <list>
+                              <bean class="com.emc.xcp.services.datasource.domain.mapping.JoinQualification">
+                                <property name="sourceAttribute" value="parent_id"/>
+                                <property name="targetAttribute" value="r_object_id"/>
+                              </bean>
+                            </list>
+                          </property>
+                          <property name="relateTo">
+                            <bean class="com.emc.xcp.services.datasource.domain.mapping.ObjectType">
+                              <property name="typeName" value="uif_f_involucrado"/>
+                              <property name="attributes">
+                                <map>
+                                  <entry key="id">
+                                    <bean class="com.emc.xcp.services.datasource.domain.mapping.DocbaseAttribute">
+                                      <property name="persistentName" value="r_object_id"/>
+                                    </bean>
+                                  </entry>
+                                </map>
+                              </property>
+                            </bean>
+                          </property>
+                          <property name="relationType" value="ONE"/>
+                        </bean>
+                      </entry>
+                    </map>
+                  </property>
+                </bean>
+              </property>
+              <property name="relationType" value="ONE"/>
+            </bean>
+          </entry>
+        </map>
+      </property>
+    </bean>
+  </property>
+</bean>
+
+</beans>

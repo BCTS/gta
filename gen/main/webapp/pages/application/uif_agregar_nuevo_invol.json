@@ -1,0 +1,377 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "${_UI_Page_uif_agregar_nuevo_invol_title}",
+  "xtype" : "xcp_form",
+  "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ {
+      "xcpId" : "da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_btncrearinvolucrado",
+      "redirectStyle" : "application",
+      "actionType" : "create",
+      "autoLoad" : "true",
+      "pageSize" : "10",
+      "outputType" : "Array",
+      "showConfirmation" : true,
+      "showSuccessNotification" : true,
+      "redirectUrl" : "application/uif_busqueda_de_involuc",
+      "actionModel" : "uif_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "apellido_materno",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_apellido_materno_1",
+          "events" : ["apellido_materno.change" ]
+        }, {
+          "propertyId" : "apellido_paterno",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_apellido_paterno_1",
+          "events" : ["apellido_paterno.change" ]
+        }, {
+          "propertyId" : "departamento_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_departamento_nacimiento_1",
+          "events" : ["departamento.change" ]
+        }, {
+          "propertyId" : "distrito_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_distrito_nacimiento_1",
+          "events" : ["distrito.change" ]
+        }, {
+          "propertyId" : "nombres",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_nombres_1",
+          "events" : ["nombres.change" ]
+        }, {
+          "propertyId" : "pais_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_pais_nacimiento_1",
+          "events" : ["pais.change" ]
+        }, {
+          "propertyId" : "profesiones",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_profesiones_1",
+          "events" : ["profesiones.change" ]
+        }, {
+          "propertyId" : "provincia_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_provincia_nacimiento_1",
+          "events" : ["provincia.change" ]
+        }, {
+          "propertyId" : "razon_social",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_razon_social_1",
+          "events" : ["razon_social.change" ]
+        }, {
+          "propertyId" : "tipo_persona",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_tipo_persona_1",
+          "events" : ["tipo_persona.change" ]
+        }, {
+          "propertyId" : "fecha_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_agregar_nuevo_invol_da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_fecha_nacimiento_1",
+          "events" : ["fecha_nacimiento.change" ]
+        } ],
+        "mapping" : {
+          "apellido_materno" : ["apellido_materno" ],
+          "apellido_paterno" : ["apellido_paterno" ],
+          "departamento_nacimiento" : ["departamento" ],
+          "distrito_nacimiento" : ["distrito" ],
+          "nombres" : ["nombres" ],
+          "pais_nacimiento" : ["pais" ],
+          "profesiones" : ["profesiones" ],
+          "provincia_nacimiento" : ["provincia" ],
+          "razon_social" : ["razon_social" ],
+          "tipo_persona" : ["tipo_persona" ],
+          "fecha_nacimiento" : ["fecha_nacimiento" ]
+        }
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "title" : "${_UI_Page_uif_agregar_nuevo_invol_column_box_title}",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "column_box1",
+        "xtype" : "xcp_column_box",
+        "title" : "${_UI_Page_uif_agregar_nuevo_invol_column_box1_title}",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox2",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "tipo_persona",
+            "xtype" : "xcp_dropdown_list",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_tipo_persona_fieldLabel}",
+            "store" : "xcp.picklist.uif_pl_tipo_persona",
+            "valueType" : "STRING",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "value",
+                "setterFunName" : "setValue",
+                "etype" : "uif_agregar_nuevo_invol_tipo_persona_value_1",
+                "disableProcessingOnRender" : false,
+                "initialDefaultExprValue" : null
+              } ]
+            } ]
+          }, {
+            "xcpId" : "nombres",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_nombres_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "hidden",
+                "setterFunName" : "setHidden",
+                "etype" : "uif_agregar_nuevo_invol_nombres_hidden_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : true,
+                "initialDefaultExprValue" : "true"
+              } ]
+            } ]
+          }, {
+            "xcpId" : "apellido_paterno",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_apellido_paterno_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "hidden",
+                "setterFunName" : "setHidden",
+                "etype" : "uif_agregar_nuevo_invol_apellido_paterno_hidden_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : true,
+                "initialDefaultExprValue" : "true"
+              } ]
+            } ]
+          }, {
+            "xcpId" : "apellido_materno",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_apellido_materno_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "hidden",
+                "setterFunName" : "setHidden",
+                "etype" : "uif_agregar_nuevo_invol_apellido_materno_hidden_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : true,
+                "initialDefaultExprValue" : "true"
+              } ]
+            } ]
+          }, {
+            "xcpId" : "razon_social",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_razon_social_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "hidden",
+                "setterFunName" : "setHidden",
+                "etype" : "uif_agregar_nuevo_invol_razon_social_hidden_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : true,
+                "initialDefaultExprValue" : "true"
+              } ]
+            } ]
+          }, {
+            "xcpId" : "fecha_nacimiento",
+            "xtype" : "xcp_date_time_input",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_fecha_nacimiento_fieldLabel}",
+            "emptyText" : "${_UI_Page_uif_agregar_nuevo_invol_fecha_nacimiento_emptyText}",
+            "hstretch" : true,
+            "format" : {
+              "xtype" : "xcp_datetime_formatter",
+              "dateFormat" : "short",
+              "timeFormat" : "short",
+              "dateStyle" : "datetime"
+            },
+            "valueType" : "DATETIME"
+          }, {
+            "xcpId" : "profesiones",
+            "xtype" : "xcp_dropdown_list_multi",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_profesiones_fieldLabel}",
+            "store" : "xcp.picklist.uif_pl_profesiones",
+            "valueType" : "STRING",
+            "isRepeating" : true
+          } ]
+        } ]
+      } ]
+    }, {
+      "xcpId" : "columnvbox1",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "column_box2",
+        "xtype" : "xcp_column_box",
+        "title" : "${_UI_Page_uif_agregar_nuevo_invol_column_box2_title}",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox3",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "pais",
+            "xtype" : "xcp_dropdown_list",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_pais_fieldLabel}",
+            "store" : "xcp.picklist.uif_pl_tipo_persona",
+            "valueType" : "STRING",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "disabled",
+                "setterFunName" : "setDisabled",
+                "etype" : "uif_agregar_nuevo_invol_pais_disabled_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : false,
+                "initialDefaultExprValue" : null
+              } ]
+            } ]
+          }, {
+            "xcpId" : "departamento",
+            "xtype" : "xcp_dropdown_list",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_departamento_fieldLabel}",
+            "store" : "xcp.picklist.uif_pl_tipo_poder",
+            "valueType" : "STRING",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "disabled",
+                "setterFunName" : "setDisabled",
+                "etype" : "uif_agregar_nuevo_invol_departamento_disabled_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : false,
+                "initialDefaultExprValue" : null
+              } ]
+            } ]
+          }, {
+            "xcpId" : "provincia",
+            "xtype" : "xcp_dropdown_list",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_provincia_fieldLabel}",
+            "store" : "xcp.picklist.uif_pl_tipo_persona",
+            "valueType" : "STRING",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "disabled",
+                "setterFunName" : "setDisabled",
+                "etype" : "uif_agregar_nuevo_invol_provincia_disabled_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : false,
+                "initialDefaultExprValue" : null
+              } ]
+            } ]
+          }, {
+            "xcpId" : "distrito",
+            "xtype" : "xcp_dropdown_list",
+            "fieldLabel" : "${_UI_Page_uif_agregar_nuevo_invol_distrito_fieldLabel}",
+            "store" : "xcp.picklist.uif_pl_profesiones",
+            "valueType" : "STRING",
+            "plugins" : [ {
+              "ptype" : "xcp_expression_properties",
+              "expression" : [ {
+                "propertyId" : "disabled",
+                "setterFunName" : "setDisabled",
+                "etype" : "uif_agregar_nuevo_invol_distrito_disabled_1",
+                "events" : ["tipo_persona.change" ],
+                "disableProcessingOnRender" : false,
+                "initialDefaultExprValue" : null
+              } ]
+            } ]
+          } ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box3",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox4",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "right",
+      "valign" : "top",
+      "items" : [ {
+        "xcpId" : "btncrearinvolucrado",
+        "xtype" : "xcp_button",
+        "text" : "${_UI_Page_uif_agregar_nuevo_invol_btncrearinvolucrado_text}",
+        "actionInstanceId" : "da_def_invoke_stateless_processcrear_nuevo_involuc_initiate_btncrearinvolucrado"
+      }, {
+        "xcpId" : "btnregresar",
+        "xtype" : "xcp_button",
+        "text" : "${_UI_Page_uif_agregar_nuevo_invol_btnregresar_text}",
+        "action" : {
+          "redirectStyle" : "application",
+          "actionType" : "xcp_gotopage",
+          "redirectUrl" : "application/uif_busqueda_de_involuc"
+        }
+      } ]
+    } ]
+  } ]
+}

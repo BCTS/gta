@@ -1,0 +1,243 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "${_UI_Page_uif_busqueda_de_involuc_title}",
+  "xtype" : "xcp_form",
+  "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ {
+      "xcpId" : "buscar_involucrados",
+      "actionModel" : "uif_buscar_involucrados_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "q",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_busqueda_de_involuc_buscar_involucrados_q_1",
+          "events" : ["text_input.change" ]
+        }, {
+          "propertyId" : "input_tipo_persona",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_busqueda_de_involuc_buscar_involucrados_input_tipo_persona_1",
+          "events" : ["tipo_persona.change" ]
+        }, {
+          "propertyId" : "input_fullname",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_busqueda_de_involuc_buscar_involucrados_input_fullname_1",
+          "events" : ["nombre_completo.change" ]
+        } ],
+        "mapping" : {
+          "q" : ["text_input" ],
+          "input_tipo_persona" : ["tipo_persona" ],
+          "input_fullname" : ["nombre_completo" ]
+        }
+      } ],
+      "pageSize" : 10,
+      "actionType" : "datasource",
+      "autoLoad" : false
+    } ]
+  }, {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "title" : "${_UI_Page_uif_busqueda_de_involuc_column_box_title}",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "column_box1",
+        "xtype" : "xcp_column_box",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox1",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "width" : "100%",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "column_box2",
+            "xtype" : "xcp_column_box",
+            "collapsible" : false,
+            "collapsed" : false,
+            "collapseFirst" : true,
+            "border" : false,
+            "defaultMargins" : "5",
+            "layout" : "xcp_columnbox",
+            "items" : [ {
+              "xcpId" : "columnvbox2",
+              "xtype" : "xcp_columnvbox",
+              "orientation" : "Vertical",
+              "width" : "50%",
+              "overflow_x" : "hidden",
+              "labelWidth" : 150,
+              "labelAlign" : "left",
+              "halign" : "left",
+              "valign" : "top",
+              "defaultMargins" : "5",
+              "items" : [ {
+                "xcpId" : "text_input",
+                "xtype" : "xcp_text_input",
+                "fieldLabel" : "${_UI_Page_uif_busqueda_de_involuc_text_input_fieldLabel}",
+                "hstretch" : true,
+                "valueType" : "STRING"
+              }, {
+                "xcpId" : "nombre_completo",
+                "xtype" : "xcp_text_input",
+                "fieldLabel" : "${_UI_Page_uif_busqueda_de_involuc_nombre_completo_fieldLabel}",
+                "hstretch" : true,
+                "valueType" : "STRING"
+              } ]
+            }, {
+              "xcpId" : "columnvbox3",
+              "xtype" : "xcp_columnvbox",
+              "orientation" : "Vertical",
+              "overflow_x" : "hidden",
+              "labelWidth" : 150,
+              "labelAlign" : "left",
+              "halign" : "right",
+              "valign" : "top",
+              "defaultMargins" : "5",
+              "items" : [ {
+                "xcpId" : "tipo_persona",
+                "xtype" : "xcp_dropdown_list",
+                "fieldLabel" : "${_UI_Page_uif_busqueda_de_involuc_tipo_persona_fieldLabel}",
+                "store" : "xcp.picklist.uif_pl_tipo_persona",
+                "valueType" : "xcp.picklist.uif_pl_tipo_persona"
+              }, {
+                "xcpId" : "button",
+                "xtype" : "xcp_button",
+                "text" : "${_UI_Page_uif_busqueda_de_involuc_button_text}",
+                "actionInstanceId" : "buscar_involucrados"
+              } ]
+            } ]
+          }, {
+            "xcpId" : "column_box3",
+            "xtype" : "xcp_column_box",
+            "collapsible" : false,
+            "collapsed" : false,
+            "collapseFirst" : true,
+            "border" : false,
+            "defaultMargins" : "5",
+            "layout" : "xcp_columnbox",
+            "items" : [ {
+              "xcpId" : "columnhbox",
+              "xtype" : "xcp_columnhbox",
+              "orientation" : "Horizontal",
+              "width" : "100%",
+              "overflow_x" : "hidden",
+              "labelWidth" : 50,
+              "defaultMargins" : "5",
+              "labelAlign" : "left",
+              "halign" : "right",
+              "valign" : "top",
+              "items" : [ {
+                "xcpId" : "button1",
+                "xtype" : "xcp_button",
+                "text" : "${_UI_Page_uif_busqueda_de_involuc_button1_text}",
+                "action" : {
+                  "redirectStyle" : "application",
+                  "actionType" : "xcp_gotopage",
+                  "redirectUrl" : "application/uif_agregar_nuevo_invol"
+                }
+              } ]
+            } ]
+          } ]
+        } ]
+      }, {
+        "xcpId" : "results_list",
+        "xtype" : "xcp_results_list",
+        "typeName" : "uif_f_involucrado",
+        "modelName" : "uif_buscar_involucrados_outputs",
+        "storeId" : "buscar_involucrados",
+        "pageSize" : 10,
+        "facets" : [ "facet_profesion", "facet_pais_nacimiento" ],
+        "facetLabels" : [ "Profesión", "País Nacimiento" ],
+        "selectionModel" : false,
+        "columns" : [ {
+          "xcpId" : "results_list_page_link_column",
+          "xtype" : "xcp_results_list_page_link_column",
+          "text" : "${_UI_Page_uif_busqueda_de_involuc_results_list_page_link_column_text}",
+          "width" : 100,
+          "dataIndex" : "id",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_busqueda_de_involuc_results_list_column_text}",
+          "dataIndex" : "fullname",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : true,
+          "menuDisabled" : false
+        }, {
+          "xcpId" : "results_list_column1",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_busqueda_de_involuc_results_list_column1_text}",
+          "width" : 100,
+          "dataIndex" : "tipo_persona",
+          "valueType" : "xcp.picklist.uif_pl_tipo_persona",
+          "isRepeating" : false,
+          "sortable" : true,
+          "menuDisabled" : false
+        }, {
+          "xcpId" : "results_list_column2",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_busqueda_de_involuc_results_list_column2_text}",
+          "width" : 150,
+          "dataIndex" : "fecha_nacimiento",
+          "valueType" : "DATETIME",
+          "isRepeating" : false,
+          "format" : {
+            "xtype" : "xcp_datetime_formatter",
+            "dateFormat" : "short",
+            "timeFormat" : "short",
+            "dateStyle" : "datetime"
+          },
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column3",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_busqueda_de_involuc_results_list_column3_text}",
+          "width" : 150,
+          "dataIndex" : "r_creation_date",
+          "valueType" : "DATETIME",
+          "isRepeating" : false,
+          "format" : {
+            "xtype" : "xcp_datetime_formatter",
+            "dateFormat" : "short",
+            "timeFormat" : "short",
+            "dateStyle" : "datetime"
+          },
+          "sortable" : true,
+          "menuDisabled" : false
+        } ]
+      } ]
+    } ]
+  } ]
+}

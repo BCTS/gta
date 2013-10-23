@@ -1,0 +1,180 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "${_UI_Page_uif_create_accion_title}",
+  "xtype" : "xcp_form",
+  "modelImmutable" : true,
+  "models" : [ "uif_b_accion_template" ],
+  "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ {
+      "xcpId" : "da_def_create_b_accion_button",
+      "redirectStyle" : "current",
+      "showSuccessNotification" : true,
+      "showConfirmation" : false,
+      "actionType" : "create",
+      "actionModel" : "uif_da_def_create_b_accion",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "participacion_soles",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_create_accion_da_def_create_b_accion_participacion_soles_1",
+          "events" : ["participacion_soles.change" ]
+        }, {
+          "propertyId" : "moneda",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_create_accion_da_def_create_b_accion_moneda_1",
+          "events" : ["moneda.change" ]
+        }, {
+          "propertyId" : "capital",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_create_accion_da_def_create_b_accion_capital_1",
+          "events" : ["capital.change" ]
+        }, {
+          "propertyId" : "empresa",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_create_accion_da_def_create_b_accion_empresa_1",
+          "events" : ["empresa.change" ]
+        }, {
+          "propertyId" : "partida_registral",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_create_accion_da_def_create_b_accion_partida_registral_1",
+          "events" : ["partida_registral.change" ]
+        }, {
+          "propertyId" : "capital_origen_conocido",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_create_accion_da_def_create_b_accion_capital_origen_conocido_1",
+          "events" : ["capital_origen_conocido.change" ]
+        }, {
+          "propertyId" : "participacion_porcentaje",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_create_accion_da_def_create_b_accion_participacion_porcentaje_1",
+          "events" : ["participacion_porcentaje.change" ]
+        } ],
+        "mapping" : {
+          "participacion_soles" : ["participacion_soles" ],
+          "moneda" : ["moneda" ],
+          "capital" : ["capital" ],
+          "empresa" : ["empresa" ],
+          "partida_registral" : ["partida_registral" ],
+          "capital_origen_conocido" : ["capital_origen_conocido" ],
+          "participacion_porcentaje" : ["participacion_porcentaje" ]
+        }
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "width" : "100%",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "capital",
+        "xtype" : "xcp_number_input",
+        "fieldLabel" : "${_UI_Page_uif_create_accion_capital_fieldLabel}",
+        "allowDecimals" : true,
+        "hideTrigger" : true,
+        "keyNavEnabled" : false,
+        "mouseWheelEnabled" : false,
+        "autoStripChars" : true,
+        "hstretch" : true,
+        "valueType" : "FLOAT",
+        "name" : "uif_b_accion_template@capital"
+      }, {
+        "xcpId" : "capital_origen_conocido",
+        "xtype" : "xcp_checkbox",
+        "fieldLabel" : "${_UI_Page_uif_create_accion_capital_origen_conocido_fieldLabel}",
+        "boxLabel" : "${_UI_Page_uif_create_accion_capital_origen_conocido_boxLabel}",
+        "valueType" : "BOOLEAN",
+        "name" : "uif_b_accion_template@capital_origen_conocido"
+      }, {
+        "xcpId" : "empresa",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_Page_uif_create_accion_empresa_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "uif_b_accion_template@empresa"
+      }, {
+        "xcpId" : "moneda",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_Page_uif_create_accion_moneda_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "uif_b_accion_template@moneda"
+      }, {
+        "xcpId" : "participacion_porcentaje",
+        "xtype" : "xcp_number_input",
+        "fieldLabel" : "${_UI_Page_uif_create_accion_participacion_porcentaje_fieldLabel}",
+        "allowDecimals" : true,
+        "hideTrigger" : true,
+        "keyNavEnabled" : false,
+        "mouseWheelEnabled" : false,
+        "autoStripChars" : true,
+        "hstretch" : true,
+        "valueType" : "FLOAT",
+        "name" : "uif_b_accion_template@participacion_porcentaje"
+      }, {
+        "xcpId" : "participacion_soles",
+        "xtype" : "xcp_number_input",
+        "fieldLabel" : "${_UI_Page_uif_create_accion_participacion_soles_fieldLabel}",
+        "allowDecimals" : true,
+        "hideTrigger" : true,
+        "keyNavEnabled" : false,
+        "mouseWheelEnabled" : false,
+        "autoStripChars" : true,
+        "hstretch" : true,
+        "valueType" : "FLOAT",
+        "name" : "uif_b_accion_template@participacion_soles"
+      }, {
+        "xcpId" : "partida_registral",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "${_UI_Page_uif_create_accion_partida_registral_fieldLabel}",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "name" : "uif_b_accion_template@partida_registral"
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box1",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnhbox",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "width" : "100%",
+      "overflow_x" : "hidden",
+      "labelWidth" : 50,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "right",
+      "valign" : "top",
+      "items" : [ {
+        "xcpId" : "button",
+        "xtype" : "xcp_button",
+        "text" : "${_UI_Page_uif_create_accion_button_text}",
+        "actionInstanceId" : "da_def_create_b_accion_button"
+      } ]
+    } ]
+  } ]
+}

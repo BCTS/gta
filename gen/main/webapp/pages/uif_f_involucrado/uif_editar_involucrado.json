@@ -1,0 +1,555 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "${_UI_Page_uif_editar_involucrado_title}",
+  "xtype" : "xcp_form",
+  "modelImmutable" : true,
+  "models" : [ "uif_f_involucrado" ],
+  "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ {
+      "xcpId" : "obtener_direcciones",
+      "actionModel" : "uif_obtener_direcciones_outputs",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "input_object_id",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_obtener_direcciones_input_object_id_1",
+          "events" : ["uif_f_involucrado.change","uif_f_involucrado.load" ]
+        } ],
+        "mapping" : {
+        }
+      } ],
+      "pageSize" : 5,
+      "actionType" : "datasource",
+      "autoLoad" : false,
+      "invokerEvents" : ["uif_f_involucrado.change","uif_f_involucrado.load" ]
+    }, {
+      "xcpId" : "da_def_update_dm_folder_button",
+      "defaultConfirmationPrompt" : "Are you sure you want to update the item?",
+      "showConfirmation" : true,
+      "redirectStyle" : "specified",
+      "showSuccessNotification" : true,
+      "actionType" : "update",
+      "actionModel" : "uif_da_def_update_f_involucrado",
+      "plugins" : [ {
+        "ptype" : "xcp_expression_properties",
+        "expression" : [ {
+          "propertyId" : "id",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_id_1",
+          "events" : ["uif_f_involucrado.change","uif_f_involucrado.load" ]
+        }, {
+          "propertyId" : "apellido_materno",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_apellido_materno_1",
+          "events" : ["apellido_materno.change" ]
+        }, {
+          "propertyId" : "apellido_paterno",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_apellido_paterno_1",
+          "events" : ["apellido_paterno.change" ]
+        }, {
+          "propertyId" : "departamento_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_departamento_nacimiento_1",
+          "events" : ["departamento_nacimiento.change" ]
+        }, {
+          "propertyId" : "distrito_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_distrito_nacimiento_1",
+          "events" : ["distrito_nacimiento.change" ]
+        }, {
+          "propertyId" : "fecha_defuncion",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_fecha_defuncion_1",
+          "events" : ["fecha_defuncion.change" ]
+        }, {
+          "propertyId" : "fecha_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_fecha_nacimiento_1",
+          "events" : ["fecha_nacimiento.change" ]
+        }, {
+          "propertyId" : "nombres",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_nombres_1",
+          "events" : ["nombres.change" ]
+        }, {
+          "propertyId" : "pais_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_pais_nacimiento_1",
+          "events" : ["pais_nacimiento.change" ]
+        }, {
+          "propertyId" : "provincia_nacimiento",
+          "setterFunName" : "setInputProperty",
+          "etype" : "uif_editar_involucrado_da_def_update_dm_folder_provincia_nacimiento_1",
+          "events" : ["provincia_nacimiento.change" ]
+        } ],
+        "mapping" : {
+          "apellido_materno" : ["apellido_materno" ],
+          "apellido_paterno" : ["apellido_paterno" ],
+          "departamento_nacimiento" : ["departamento_nacimiento" ],
+          "distrito_nacimiento" : ["distrito_nacimiento" ],
+          "fecha_defuncion" : ["fecha_defuncion" ],
+          "fecha_nacimiento" : ["fecha_nacimiento" ],
+          "nombres" : ["nombres" ],
+          "pais_nacimiento" : ["pais_nacimiento" ],
+          "provincia_nacimiento" : ["provincia_nacimiento" ]
+        }
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box3",
+    "xtype" : "xcp_column_box",
+    "title" : "${_UI_Page_uif_editar_involucrado_column_box3_title}",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox2",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "fullname",
+        "xtype" : "xcp_value_display",
+        "fieldLabel" : "${_UI_Page_uif_editar_involucrado_fullname_fieldLabel}",
+        "valueType" : "STRING",
+        "isRepeating" : false,
+        "name" : "uif_f_involucrado@fullname"
+      } ]
+    }, {
+      "xcpId" : "columnvbox3",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5"
+    } ]
+  }, {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "width" : "100%",
+      "overflow_x" : "hidden",
+      "split" : true,
+      "labelWidth" : 150,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "center",
+      "valign" : "top"
+    } ]
+  }, {
+    "xcpId" : "tab_group",
+    "xtype" : "xcp_tab_group",
+    "title" : "${_UI_Page_uif_editar_involucrado_tab_group_title}",
+    "tabPosition" : "top",
+    "minWidth" : 450,
+    "items" : [ {
+      "xcpId" : "tab4",
+      "xtype" : "xcp_tab",
+      "title" : "${_UI_Page_uif_editar_involucrado_tab4_title}",
+      "items" : [ {
+        "xcpId" : "column_box7",
+        "xtype" : "xcp_column_box",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox7",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "tipo_persona",
+            "xtype" : "xcp_value_display",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_tipo_persona_fieldLabel}",
+            "valueType" : "STRING",
+            "isRepeating" : false
+          }, {
+            "xcpId" : "nombres",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_nombres_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "name" : "uif_f_involucrado@nombres"
+          }, {
+            "xcpId" : "apellido_materno",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_apellido_materno_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "name" : "uif_f_involucrado@apellido_materno"
+          }, {
+            "xcpId" : "apellido_paterno",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_apellido_paterno_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "name" : "uif_f_involucrado@apellido_paterno"
+          }, {
+            "xcpId" : "fecha_nacimiento",
+            "xtype" : "xcp_date_time_input",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_fecha_nacimiento_fieldLabel}",
+            "hstretch" : true,
+            "format" : {
+              "xtype" : "xcp_datetime_formatter",
+              "dateFormat" : "short",
+              "timeFormat" : "short",
+              "dateStyle" : "datetime"
+            },
+            "valueType" : "DATETIME",
+            "name" : "uif_f_involucrado@fecha_nacimiento"
+          }, {
+            "xcpId" : "fecha_defuncion",
+            "xtype" : "xcp_date_time_input",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_fecha_defuncion_fieldLabel}",
+            "hstretch" : true,
+            "format" : {
+              "xtype" : "xcp_datetime_formatter",
+              "dateFormat" : "short",
+              "timeFormat" : "short",
+              "dateStyle" : "datetime"
+            },
+            "valueType" : "DATETIME",
+            "name" : "uif_f_involucrado@fecha_defuncion"
+          } ]
+        }, {
+          "xcpId" : "columnvbox8",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "pais_nacimiento",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_pais_nacimiento_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "name" : "uif_f_involucrado@pais_nacimiento"
+          }, {
+            "xcpId" : "departamento_nacimiento",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_departamento_nacimiento_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "name" : "uif_f_involucrado@departamento_nacimiento"
+          }, {
+            "xcpId" : "provincia_nacimiento",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_provincia_nacimiento_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "name" : "uif_f_involucrado@provincia_nacimiento"
+          }, {
+            "xcpId" : "distrito_nacimiento",
+            "xtype" : "xcp_text_input",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_distrito_nacimiento_fieldLabel}",
+            "hstretch" : true,
+            "valueType" : "STRING",
+            "name" : "uif_f_involucrado@distrito_nacimiento"
+          }, {
+            "xcpId" : "profesion",
+            "xtype" : "xcp_dropdown_list_multi",
+            "fieldLabel" : "${_UI_Page_uif_editar_involucrado_profesion_fieldLabel}",
+            "store" : "xcp.picklist.uif_pl_profesiones",
+            "valueType" : "STRING",
+            "isRepeating" : true
+          } ]
+        } ]
+      }, {
+        "xcpId" : "column_box8",
+        "xtype" : "xcp_column_box",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox9",
+          "xtype" : "xcp_columnhbox",
+          "orientation" : "Horizontal",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "defaultMargins" : "5",
+          "labelAlign" : "left",
+          "halign" : "right",
+          "valign" : "top",
+          "items" : [ {
+            "xcpId" : "button",
+            "xtype" : "xcp_button",
+            "text" : "${_UI_Page_uif_editar_involucrado_button_text}",
+            "actionInstanceId" : "da_def_update_dm_folder_button"
+          } ]
+        } ]
+      } ]
+    }, {
+      "xcpId" : "tab",
+      "xtype" : "xcp_tab",
+      "title" : "${_UI_Page_uif_editar_involucrado_tab_title}",
+      "items" : [ {
+        "xcpId" : "column_box5",
+        "xtype" : "xcp_column_box",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox5",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "width" : "100%",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "column_box6",
+            "xtype" : "xcp_column_box",
+            "collapsible" : false,
+            "collapsed" : false,
+            "collapseFirst" : true,
+            "border" : false,
+            "defaultMargins" : "5",
+            "layout" : "xcp_columnbox",
+            "items" : [ {
+              "xcpId" : "columnvbox6",
+              "xtype" : "xcp_columnhbox",
+              "orientation" : "Horizontal",
+              "width" : "100%",
+              "overflow_x" : "hidden",
+              "labelWidth" : 150,
+              "defaultMargins" : "5",
+              "labelAlign" : "left",
+              "halign" : "right",
+              "valign" : "top",
+              "items" : [ {
+                "xcpId" : "btn_agregar_direccion",
+                "xtype" : "xcp_button",
+                "text" : "${_UI_Page_uif_editar_involucrado_btn_agregar_direccion_text}",
+                "action" : {
+                  "redirectStyle" : "specified",
+                  "actionType" : "xcp_gotopage",
+                  "redirectUrl" : "uif_agregar_direcci_n",
+                  "redirectUrlModel" : "uif_f_involucrado"
+                }
+              } ]
+            } ]
+          } ]
+        } ]
+      }, {
+        "xcpId" : "results_list",
+        "xtype" : "xcp_results_list",
+        "typeName" : "uif_b_direccion",
+        "modelName" : "uif_obtener_direcciones_outputs",
+        "storeId" : "obtener_direcciones",
+        "initParams" : {extraParams:{input_object_id:'expression.id_from_context'}},
+        "pageSize" : 5,
+        "selectionModel" : false,
+        "columns" : [ {
+          "xcpId" : "results_list_page_link_column",
+          "xtype" : "xcp_results_list_page_link_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_page_link_column_text}",
+          "width" : 150,
+          "dataIndex" : "pais",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : true,
+          "menuDisabled" : false
+        }, {
+          "xcpId" : "results_list_column",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column_text}",
+          "width" : 150,
+          "dataIndex" : "departamento",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column1",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column1_text}",
+          "width" : 150,
+          "dataIndex" : "provincia",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column2",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column2_text}",
+          "width" : 150,
+          "dataIndex" : "distrito",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column3",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column3_text}",
+          "width" : 150,
+          "dataIndex" : "tipo_zona",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column4",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column4_text}",
+          "width" : 150,
+          "dataIndex" : "nombre_zona",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column5",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column5_text}",
+          "width" : 150,
+          "dataIndex" : "tipo_via",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column6",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column6_text}",
+          "width" : 150,
+          "dataIndex" : "nombre_via",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column7",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column7_text}",
+          "width" : 150,
+          "dataIndex" : "tipo_numero",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column8",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column8_text}",
+          "width" : 150,
+          "dataIndex" : "numero_exteriores",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        }, {
+          "xcpId" : "results_list_column9",
+          "xtype" : "xcp_results_list_column",
+          "text" : "${_UI_Page_uif_editar_involucrado_results_list_column9_text}",
+          "dataIndex" : "numero_interiores",
+          "valueType" : "STRING",
+          "isRepeating" : false,
+          "sortable" : false,
+          "menuDisabled" : true
+        } ]
+      } ]
+    }, {
+      "xcpId" : "tab1",
+      "xtype" : "xcp_tab",
+      "title" : "${_UI_Page_uif_editar_involucrado_tab1_title}"
+    }, {
+      "xcpId" : "tab2",
+      "xtype" : "xcp_tab",
+      "title" : "${_UI_Page_uif_editar_involucrado_tab2_title}"
+    }, {
+      "xcpId" : "tab3",
+      "xtype" : "xcp_tab",
+      "title" : "${_UI_Page_uif_editar_involucrado_tab3_title}"
+    } ]
+  }, {
+    "xcpId" : "column_box2",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox1",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "width" : "100%",
+      "split" : true,
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5"
+    } ]
+  }, {
+    "xcpId" : "column_box1",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnhbox",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "width" : "100%",
+      "overflow_x" : "hidden",
+      "labelWidth" : 50,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "right",
+      "valign" : "top"
+    } ]
+  } ]
+}

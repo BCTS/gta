@@ -1,0 +1,12 @@
+{
+uif_buscar_involucrados:{
+facet_profesion:{
+label: "${_UI_Facet_uif_buscar_involucrados_facet_profesion_facet_profesion}"
+}
+,
+facet_pais_nacimiento:{
+label: "${_UI_Facet_uif_buscar_involucrados_facet_pais_nacimiento_facet_pais_nacimiento}"
+}
+
+}
+}
